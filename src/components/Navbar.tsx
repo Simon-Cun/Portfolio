@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 flex justify-center gap-10 py-5 text-xl bg-[rgba(0,0,0,0.1)] drop-shadow-[0_0_8px_white]">
+    <div className="sticky top-0 flex justify-center gap-10 bg-[rgba(0,0,0,0.1)] py-5 text-xl drop-shadow-[0_0_8px_white]">
       {tags.map(({ name, link }, index) => (
         <Link href={link} key={index} className="">
           {name}
