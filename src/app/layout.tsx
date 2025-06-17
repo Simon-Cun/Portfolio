@@ -1,8 +1,14 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Antic_Didone } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const antic_didone = Antic_Didone({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--antic-didone-font",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -16,8 +22,12 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`overflow-hidden bg-black text-white ${antic_didone.className}`}
+      >
+        <Navbar />
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+        <Footer />
       </body>
     </html>
   );
