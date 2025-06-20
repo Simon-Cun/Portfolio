@@ -5,11 +5,11 @@ import Projects from "@/components/projects/Projects";
 
 const Page = () => {
   return (
-    <div className="flex flex-col h-screen w-screen items-center justify-center">
-      <Home/>
-      <About/>
-      <Experience/>
-      <Projects/>
+    <div className="flex flex-col items-center">
+      <Home />
+      <About />
+      <Projects />
+      <Experience />
     </div>
   );
 };
