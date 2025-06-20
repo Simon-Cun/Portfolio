@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-50 w-full bg-[rgba(0,0,0,0.2)] py-2 text-xl drop-shadow-[0_0_8px_white]">
+    <div className="sticky top-0 z-50 w-full bg-[rgba(0,0,0,0.2)] py-2 text-xl drop-shadow-[0_0_50px_white]">
       <div className="relative flex items-center justify-center">
         {/* Left-aligned clickable name */}
         <Link

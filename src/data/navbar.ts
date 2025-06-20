@@ -8,12 +8,12 @@ export const tags = [
     link: "#about",
   },
   {
-    name: "EXPERIENCE",
-    link: "#experience",
-  },
-  {
     name: "PROJECTS",
     link: "#projects",
+  },
+  {
+    name: "EXPERIENCE",
+    link: "#experience",
   },
   {
     name: "CONTACT",
