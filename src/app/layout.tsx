@@ -2,7 +2,6 @@ import "./globals.css";
 import { Antic_Didone } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 const antic_didone = Antic_Didone({
   subsets: ["latin"],
@@ -28,7 +27,6 @@ export default function RootLayout({ children }: LayoutProps) {
       >
         <Navbar />
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
-        <Footer />
       </body>
     </html>
   );

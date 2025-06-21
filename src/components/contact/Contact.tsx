@@ -1,6 +1,6 @@
 import HorizontalTitle from "@/components/HorizontalTitle";
 
-const Footer = () => {
+const Contact = () => {
   return (
     <section
       id="contact"
@@ -11,4 +11,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Contact;
