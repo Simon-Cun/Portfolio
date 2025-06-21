@@ -13,7 +13,7 @@
 
 ## Figma
 
-[Figma Wireframe]([url](https://www.figma.com/design/8ymqp84KwJkMg4rpnKyzpL/Portfolio-Wireframe?node-id=0-1&p=f&t=4re8f5vqpDLDKS7A-0))
+[Figma Wireframe](https://www.figma.com/design/8ymqp84KwJkMg4rpnKyzpL/Portfolio-Wireframe?node-id=0-1&p=f&t=4re8f5vqpDLDKS7A-0)
 
 ## Node.js
 
