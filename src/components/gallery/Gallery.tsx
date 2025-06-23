@@ -15,8 +15,8 @@ const Gallery = () => {
       <div className="flex w-full justify-center">
         <HorizontalTitle title="GALLERY" />
       </div>
-      <div className="md:flex mx-4">
-        <div className="mt-10 md:ml-5 grid justify-center gap-5 md:grid-cols-4">
+      <div className="mx-4 md:flex">
+        <div className="mt-10 grid justify-center gap-5 md:ml-5 md:grid-cols-4">
           {GalleryData.map(({ src, alt }, index) => {
             return (
               <Image
@@ -31,7 +31,7 @@ const Gallery = () => {
         <Image
           src={date}
           alt=""
-          className="md:mx-5 md:mt-10 mt-5 object-cover md:w-[16vw]"
+          className="mt-5 object-cover md:mx-5 md:mt-10 md:w-[16vw]"
         />
       </div>
     </section>
