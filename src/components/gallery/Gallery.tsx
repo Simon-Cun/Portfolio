@@ -29,7 +29,7 @@ const Gallery = () => {
             );
           })}
         </div>
-        <Image src={date} alt="" width={400} className="mt-10 mx-5" />
+        <Image src={date} alt="" width={400} className="mt-10 mx-5 object-cover" />
       </div>
     </section>
   );
