@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="flex h-screen w-full flex-col-reverse items-center justify-center border-b-1 md:flex-row"
+      className="flex w-full flex-col-reverse items-center justify-center border-b-1 md:h-screen md:flex-row"
     >
       <div className="flex w-full flex-col items-center gap-8">
         <Image
