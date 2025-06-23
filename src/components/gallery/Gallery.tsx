@@ -32,7 +32,7 @@ const Gallery = () => {
         <Image
           src={date}
           alt=""
-          width={400}
+          width={250}
           className="mx-5 mt-10 object-cover"
         />
       </div>

@@ -1,11 +1,11 @@
-import date1 from "@/public/gallery/date_(1).jpg";
-import date2 from "@/public/gallery/date_(2).jpg";
-import date3 from "@/public/gallery/date_(3).jpg";
-import date4 from "@/public/gallery/date_(4).jpg";
-import date5 from "@/public/gallery/date_(5).jpg";
-import date6 from "@/public/gallery/date_(6).jpg";
-import date7 from "@/public/gallery/date_(7).jpg";
-import date8 from "@/public/gallery/date_(8).jpg";
+import date1 from "@/public/gallery/date_(1).webp";
+import date2 from "@/public/gallery/date_(2).webp";
+import date3 from "@/public/gallery/date_(3).webp";
+import date4 from "@/public/gallery/date_(4).webp";
+import date5 from "@/public/gallery/date_(5).webp";
+import date6 from "@/public/gallery/date_(6).webp";
+import date7 from "@/public/gallery/date_(7).webp";
+import date8 from "@/public/gallery/date_(8).webp";
 
 export const GalleryData = [
   {
