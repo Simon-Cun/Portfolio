@@ -2,7 +2,7 @@ const VerticalTitle = ({ title }: { title: string }) => {
   const words = title.split(" ");
 
   return (
-    <div className="flex items-center gap-4 text-center text-4xl md:text-7xl">
+    <div className="flex items-center gap-4 text-center text-5xl md:text-7xl">
       {words.map((word, wordIndex) => (
         <div
           key={wordIndex}
