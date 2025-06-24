@@ -13,8 +13,8 @@ const Projects = () => {
           <VerticalTitle title="PROJECTS" />
         </div>
       </div>
-      <div className="sticky top-[50px] md:hidden">
-        <div className="sticky top-[50px] flex w-full justify-center pb-5">
+      <div className="sticky top-[20px] md:hidden">
+        <div className="sticky top-[20px] flex w-full justify-center">
           <HorizontalTitle title="PROJECTS" />
         </div>
       </div>
@@ -38,7 +38,7 @@ const Projects = () => {
             ) => (
               <div
                 key={index}
-                className={`sticky top-[150px] m-3 rounded-4xl border border-white/20 p-5 text-center shadow-lg backdrop-blur-md backdrop-filter md:top-[50px] md:m-10 md:p-10 md:text-left ${color} flex flex-col gap-6 text-xs md:flex-row`}
+                className={`sticky top-[120px] m-3 rounded-4xl border border-white/20 p-5 text-center shadow-lg backdrop-blur-md backdrop-filter md:top-[50px] md:m-10 md:p-10 md:text-left ${color} flex flex-col gap-6 text-xs md:flex-row`}
                 style={{
                   transform: `translateY(${index * 24}px)`,
                   zIndex: ProjectData.length + index,
