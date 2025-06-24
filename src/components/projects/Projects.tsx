@@ -5,14 +5,14 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="left-0 flex w-full justify-center border-b-1 py-20 pb-96 pl-10"
+      className="left-0 flex w-full justify-center border-b-1 py-20 pb-52 md:pb-96 md:pl-10"
     >
       <div className="sticky">
-        <div className="sticky top-[100px]">
+        <div className="sticky top-0 md:top-[50px] md:block hidden">
           <Title title="PROJECTS" />
         </div>
       </div>
-      <div className="sticky top-[100px]">
+      <div className="sticky top-0 md:top-[50px]">
         <div className="sticky flex w-full flex-col justify-center gap-20">
           {ProjectData.map(
             (
@@ -32,7 +32,7 @@ const Projects = () => {
             ) => (
               <div
                 key={index}
-                className={`sticky top-[100px] m-10 rounded-4xl border border-white/20 p-10 shadow-lg backdrop-blur-md backdrop-filter ${color} flex gap-20`}
+                className={`sticky top-0 md:top-[50px] m-3 md:m-10 rounded-4xl border border-white/20 p-10 shadow-lg backdrop-blur-md backdrop-filter ${color} flex md:flex-row flex-col gap-20 text-xs`}
                 style={{
                   transform: `translateY(${index * 24}px)`,
                   zIndex: ProjectData.length + index,
