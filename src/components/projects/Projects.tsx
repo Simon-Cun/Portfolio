@@ -38,7 +38,7 @@ const Projects = () => {
             ) => (
               <div
                 key={index}
-                className={`sticky top-[120px] m-3 rounded-4xl border border-white/20 p-5 text-center shadow-lg backdrop-blur-md backdrop-filter md:top-[50px] md:m-10 md:p-10 md:text-left ${color} flex flex-col gap-6 text-xs md:flex-row`}
+                className={`sticky top-[120px] m-3 rounded-4xl border border-white/20 p-5 text-center shadow-lg backdrop-blur-md backdrop-filter md:top-[50px] md:m-10 md:p-10 md:text-left ${color} flex flex-col gap-6 text-xs md:flex-row md:text-sm`}
                 style={{
                   transform: `translateY(${index * 24}px)`,
                   zIndex: ProjectData.length + index,
@@ -72,7 +72,7 @@ const Projects = () => {
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    className="flex w-[400px] object-contain"
+                    className="flex w-[400px] object-contain md:w-[500px]"
                   />
                 </div>
               </div>
