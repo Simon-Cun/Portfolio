@@ -32,13 +32,13 @@ const Projects = () => {
             ) => (
               <div
                 key={index}
-                className={`sticky top-0 m-3 rounded-4xl border border-white/20 p-10 shadow-lg backdrop-blur-md backdrop-filter md:top-[50px] md:m-10 ${color} flex flex-col gap-20 text-xs md:flex-row`}
+                className={`sticky top-0 m-3 rounded-4xl border border-white/20 md:p-10 p-5 text-center md:text-left shadow-lg backdrop-blur-md backdrop-filter md:top-[50px] md:m-10 ${color} flex flex-col gap-20 text-xs md:flex-row`}
                 style={{
                   transform: `translateY(${index * 24}px)`,
                   zIndex: ProjectData.length + index,
                 }}
               >
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col md:gap-4 gap-2">
                   <div className="text-4xl">{title}</div>
                   <div className="flex gap-5">
                     <div>{role}</div>
@@ -46,7 +46,7 @@ const Projects = () => {
                     <div>{status}</div>
                   </div>
                   <div>{description}</div>
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 w-full justify-center md:justify-normal">
                     {TechStack.map((tech, i) => (
                       <span
                         key={i}
