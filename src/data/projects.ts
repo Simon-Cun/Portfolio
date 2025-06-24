@@ -1,4 +1,4 @@
-import date2 from "@/public/gallery/date_(2).webp";
+import date2 from "@/public/placeholder.webp";
 
 export const ProjectData = [
   {
