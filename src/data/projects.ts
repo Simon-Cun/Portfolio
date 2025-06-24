@@ -2,7 +2,7 @@ import date2 from "@/public/placeholder.webp";
 
 export const ProjectData = [
   {
-    title: "Project",
+    title: "ACM Forge Autonomous Drones Project",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
     TechStack: ["React", "Tailwind CSS", "Firebase"],
@@ -25,7 +25,7 @@ export const ProjectData = [
     },
   },
   {
-    title: "Project",
+    title: "Chinese Student Association Website",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
     TechStack: ["React", "Tailwind CSS", "Firebase"],
@@ -48,7 +48,7 @@ export const ProjectData = [
     },
   },
   {
-    title: "Project",
+    title: "WUSHU Website",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
     TechStack: ["React", "Tailwind CSS", "Firebase"],
@@ -71,7 +71,7 @@ export const ProjectData = [
     },
   },
   {
-    title: "Project",
+    title: "Twice is Nice",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
     TechStack: ["React", "Tailwind CSS", "Firebase"],
@@ -94,7 +94,7 @@ export const ProjectData = [
     },
   },
   {
-    title: "Project",
+    title: "My Portfolio Website",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
     TechStack: ["React", "Tailwind CSS", "Firebase"],
@@ -117,7 +117,7 @@ export const ProjectData = [
     },
   },
   {
-    title: "Project",
+    title: "ULA Website",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
     TechStack: ["React", "Tailwind CSS", "Firebase"],
