@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex md:flex-row flex-col h-screen w-full justify-center border-b-1"
+      className="flex h-screen w-full flex-col justify-center border-b-1 md:flex-row"
     >
       <div className="flex h-full w-full items-center justify-center">
         <div className="h-[450px] w-[500px] rounded-2xl border-4 border-gray-700 bg-blue-100">
@@ -32,9 +32,9 @@ const About = () => {
         </div>
       </div>
       <Title title="ABOUT ME" />
-      <div className="flex flex-col h-full w-full items-center justify-center">
-        <div className="text-3xl mb-2">Notes About Me!</div>
-        <div className="w-[500px] divide-y-3 divide-gray-700 border-4 border-gray-700  rounded-xl bg-blue-100 text-gray-700 text-xl">
+      <div className="flex h-full w-full flex-col items-center justify-center">
+        <div className="mb-2 text-3xl">Notes About Me!</div>
+        <div className="w-[500px] divide-y-3 divide-gray-700 rounded-xl border-4 border-gray-700 bg-blue-100 text-xl text-gray-700">
           <div className="py-2 pl-4">
             <div className="">Who Am I?</div>
             <div className="text-sm">short description</div>
