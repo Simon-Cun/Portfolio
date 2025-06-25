@@ -41,17 +41,16 @@ const About = () => {
         <div className="mb-2 text-3xl">Notes About Me!</div>
         <div className="w-[500px] divide-y-3 divide-teal-300/50 rounded-2xl border-4 border-teal-300/50 bg-blue-100 text-xl text-gray-700">
           {NoteData.map((note, idx) => (
-  <NoteCard
-    key={idx}
-    title={note.title}
-    description={note.description}
-    isActive={selectedNote.title === note.title}
-    onClick={() => setSelectedNote(note)}
-    isFirst={idx === 0}
-    isLast={idx === NoteData.length - 1}
-  />
-))}
-
+            <NoteCard
+              key={idx}
+              title={note.title}
+              description={note.description}
+              isActive={selectedNote.title === note.title}
+              onClick={() => setSelectedNote(note)}
+              isFirst={idx === 0}
+              isLast={idx === NoteData.length - 1}
+            />
+          ))}
         </div>
       </div>
     </section>
