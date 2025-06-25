@@ -9,7 +9,7 @@ const NoteCard = ({ title, description, isActive, onClick }: NoteCardProps) => {
   return (
     <button
       onClick={onClick}
-      className={`w-full py-2 pl-4 text-left transition-colors ${
+      className={`w-full cursor-pointer py-2 pl-4 text-left transition-colors ${
         isActive ? "bg-blue-200 font-semibold" : "hover:bg-blue-200"
       }`}
     >
