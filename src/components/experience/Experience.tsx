@@ -1,7 +1,7 @@
 "use client";
 
 import HorizontalTitle from "@/components/HorizontalTitle";
-import { ExperienceData, useExperienceContent } from "@/data/experience";
+import { useExperienceContent } from "@/data/experience";
 import Image from "next/image";
 
 const Experience = () => {
