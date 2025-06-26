@@ -5,7 +5,7 @@ export const ExperienceData = [
   {
     logo: example,
     title: "Example",
-    job: "Example Role A",
+    job: "Example",
     information:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris, sed tempor velit. Vivamus efficitur turpis at massa dictum, nec rhoncus sem euismod.",
   },
