@@ -13,7 +13,7 @@ const Experience = () => {
       id="experience"
       className="flex w-full items-center justify-center gap-16 border-b-1 py-20 pr-20"
     >
-      <div className="relative flex h-[350px] w-[800px] items-center justify-between rounded-[4rem] bg-purple-200 px-6">
+      <div className="relative flex h-[350px] w-[800px] items-center justify-between rounded-[4rem] bg-green-200 px-6">
         <div className="absolute -top-2 -right-1 -z-20 h-20 w-30 rounded-tl-md rounded-tr-[4rem] rounded-b-md border-4 border-white bg-gray-200 shadow-md"></div>
         <div className="absolute -top-2 -left-1 -z-20 h-20 w-30 rounded-tl-[4rem] rounded-tr-md rounded-b-md border-4 border-white bg-gray-200 shadow-md"></div>
 
@@ -25,7 +25,7 @@ const Experience = () => {
             <div className="absolute top-0 left-1/2 h-full w-5 -translate-x-1/2 bg-white" />
           </div>
         </div>
-        <div className="flex h-[330px] w-[550px] items-center justify-center rounded-2xl bg-purple-300 shadow-[inset_0_2px_6px_rgba(0,0,0,0.2)]">
+        <div className="flex h-[330px] w-[550px] items-center justify-center rounded-2xl bg-green-300 shadow-[inset_0_2px_6px_rgba(0,0,0,0.2)]">
           <div className="flex h-[300px] w-[500px] flex-col border-[8px] border-gray-900 bg-white p-4 text-black">
             <div className="text-xl font-bold">{selectedExperience.title}</div>
             <div className="text-sm font-semibold">
