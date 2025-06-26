@@ -10,7 +10,7 @@ const antic_didone = Antic_Didone({
 });
 
 export const metadata = {
-  title: "My Portfolio Website",
+  title: "Simon Cun",
   description:
     "I hope you learn a lot about me through my portfolio website! :D",
 };
