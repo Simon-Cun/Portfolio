@@ -34,7 +34,7 @@ export const ExperienceData = [
 
 export const useExperienceContent = () => {
   const [selectedExperience, setSelectedExperience] = useState(
-    ExperienceData[0]
+    ExperienceData[0],
   );
   return { selectedExperience, setSelectedExperience, ExperienceData };
 };
