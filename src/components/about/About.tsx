@@ -41,7 +41,7 @@ const About = () => {
 
   return (
     <div className="flex w-full flex-col items-center justify-center gap-8 border-b-2 py-4 md:flex-row">
-      <div className="flex w-[600px] flex-col items-center gap-4 rounded-2xl bg-white/15 p-4 shadow-lg backdrop-blur-md backdrop-filter">
+      <div className="flex w-[600px] flex-col items-center gap-4 rounded-2xl p-4 shadow-lg backdrop-blur-md backdrop-filter">
         <div className="w-full rounded-2xl bg-white/10 p-4">
           <div className="pb-2 text-2xl font-semibold">Who Am I?</div>
           <div className="w-full rounded-2xl bg-white/10 p-4">
@@ -70,12 +70,6 @@ const About = () => {
             </ul>
           </div>
         </div>
-      </div>
-
-      <div>
-        <VerticalTitle title="ABOUT ME" />
-      </div>
-      <div className="flex h-[800px] w-[600px] flex-col items-center justify-between rounded-2xl bg-white/15 px-4 pb-4">
         <div className="mt-4 flex w-full flex-col items-center justify-center rounded-2xl bg-white/10 px-4">
           <div className="my-2 text-2xl font-semibold">My Music</div>
           <iframe
@@ -88,6 +82,13 @@ const About = () => {
             loading="lazy"
           />
         </div>
+      </div>
+
+      <div>
+        <VerticalTitle title="ABOUT ME" />
+      </div>
+      <div className="flex h-[800px] w-[600px] flex-col items-center justify-center rounded-2xl px-4 pb-4">
+        
 
         <div className="flex w-full flex-col items-center gap-4 rounded-2xl bg-white/10 p-4">
           <div className="text-2xl font-semibold">Contact Me</div>
