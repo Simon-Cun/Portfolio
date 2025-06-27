@@ -40,8 +40,38 @@ const About = () => {
   };
 
   return (
-    <div className="flex w-full items-center justify-center gap-8 border-b-2 py-4">
-      <div className="h-[700px] w-[600px] rounded-4xl border-1 border-white/20 bg-blue-200/20 shadow-lg backdrop-blur-md backdrop-filter"></div>
+    <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8 border-b-2 py-4">
+      <div className="flex w-[600px] flex-col items-center gap-4 rounded-2xl bg-white/15 p-4 shadow-lg backdrop-blur-md backdrop-filter">
+        <div className="w-full rounded-2xl bg-white/10 p-4">
+          <div className="text-2xl font-semibold pb-2">Who Am I?</div>
+          <div className="w-full rounded-2xl bg-white/10 p-4">
+            I am a current student studying Computer Science and I am learning
+            Full-Stack ML/AI and Software Engineering.
+          </div>
+        </div>
+        <div className="w-full rounded-2xl bg-white/10 p-4">
+          <div className="text-2xl font-semibold pb-2">My Coursework</div>
+          <div className="w-full flex rounded-2xl bg-white/10 p-4">
+            <ul className="list-disc pl-4">
+                <li>CS100 Software Construction - </li>
+                <li>CS111 Discreet Structures - </li>
+                <li>CS50P Harvard Online Course - </li>
+            </ul>
+          </div>
+        </div>
+        <div className="w-full rounded-2xl bg-white/10 p-4">
+          <div className="text-2xl font-semibold pb-2">Hobbies & Interests</div>
+          <div className="w-full flex rounded-2xl bg-white/10 p-4">
+            <ul className="list-disc pl-4">
+                <li>Art</li>
+                <li>Korean</li>
+                <li>Anime, Manga, Manhwa, and Movies</li>
+                <li>Music</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div>
         <VerticalTitle title="ABOUT ME" />
       </div>
@@ -63,7 +93,7 @@ const About = () => {
           <div className="text-2xl font-semibold">Contact Me</div>
 
           <div className="w-full rounded-xl bg-white/10 p-4 text-white">
-            <h3 className="mb-2 text-lg font-semibold">Leave a Note</h3>
+            <h3 className="mb-2 text-lg font-semibold">Leave a Message</h3>
             <form
               ref={formRef}
               onSubmit={sendEmail}
