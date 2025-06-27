@@ -88,8 +88,6 @@ const About = () => {
         <VerticalTitle title="ABOUT ME" />
       </div>
       <div className="flex h-[800px] w-[600px] flex-col items-center justify-center rounded-2xl px-4 pb-4">
-        
-
         <div className="flex w-full flex-col items-center gap-4 rounded-2xl bg-white/10 p-4">
           <div className="text-2xl font-semibold">Contact Me</div>
 
