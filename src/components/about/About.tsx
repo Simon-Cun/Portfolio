@@ -40,23 +40,16 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="flex w-full flex-col items-center justify-center gap-8 border-b-2 py-4 md:flex-row">
+    <section
+      id="about"
+      className="flex w-full flex-col items-center justify-center gap-8 border-b-2 py-4 md:flex-row"
+    >
       <div className="flex w-[600px] flex-col items-center gap-4 rounded-2xl p-4 shadow-lg backdrop-blur-md backdrop-filter">
         <div className="w-full rounded-2xl bg-white/10 p-4">
           <div className="pb-2 text-2xl font-semibold">Who Am I?</div>
           <div className="w-full rounded-2xl bg-white/10 p-4">
             I am a current student studying Computer Science and I am learning
             Full-Stack ML/AI and Software Engineering.
-          </div>
-        </div>
-        <div className="w-full rounded-2xl bg-white/10 p-4">
-          <div className="pb-2 text-2xl font-semibold">My Coursework</div>
-          <div className="flex w-full rounded-2xl bg-white/10 p-4">
-            <ul className="list-disc pl-4">
-              <li>CS100 Software Construction - </li>
-              <li>CS111 Discreet Structures - </li>
-              <li>CS50P Harvard Online Course - </li>
-            </ul>
           </div>
         </div>
         <div className="w-full rounded-2xl bg-white/10 p-4">
