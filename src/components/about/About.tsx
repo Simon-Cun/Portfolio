@@ -45,14 +45,14 @@ const About = () => {
       <div>
         <VerticalTitle title="ABOUT ME" />
       </div>
-      <div className="flex h-[800px] w-[600px] flex-col items-center justify-between gap-4 rounded-2xl bg-white/15 px-4 pb-4">
-        <div className="mt-4 flex w-full flex-col items-center rounded-2xl bg-white/10 px-4">
+      <div className="flex h-[800px] w-[600px] flex-col items-center justify-between rounded-2xl bg-white/15 px-4 pb-4">
+        <div className="mt-4 flex w-full flex-col rounded-2xl bg-white/10 px-4 justify-center items-center">
           <div className="my-2 text-2xl font-semibold">My Music</div>
           <iframe
             style={{ borderRadius: "12px" }}
             src="https://open.spotify.com/embed/playlist/37i9dQZF1EVHGWrwldPRtj?utm_source=generator&theme=0"
             width="100%"
-            height="200"
+            height="170"
             frameBorder="0"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
