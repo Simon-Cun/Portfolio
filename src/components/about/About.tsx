@@ -24,7 +24,7 @@ const About = () => {
         "service_b80qjz8",
         "template_nesznbr",
         formRef.current!,
-        "4WLIg8cq3sUpE_wwi"
+        "4WLIg8cq3sUpE_wwi",
       )
       .then(
         () => {
@@ -35,7 +35,7 @@ const About = () => {
         },
         (error) => {
           console.error("❌ Failed to send message:", error);
-        }
+        },
       );
   };
 
