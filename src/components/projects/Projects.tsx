@@ -51,7 +51,7 @@ const Projects = () => {
                     <div>{date}</div>
                     <div>{status}</div>
                   </div>
-                  <div>{description}</div>
+                  s<div>{description}</div>
                   <div className="flex w-full justify-center gap-4 md:justify-normal">
                     {TechStack.map((tech, i) => (
                       <span
