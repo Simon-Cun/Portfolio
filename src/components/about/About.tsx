@@ -40,7 +40,7 @@ const About = () => {
   };
 
   return (
-    <div className="flex w-full flex-col items-center justify-center gap-8 border-b-2 py-4 md:flex-row">
+    <section id="about" className="flex w-full flex-col items-center justify-center gap-8 border-b-2 py-4 md:flex-row">
       <div className="flex w-[600px] flex-col items-center gap-4 rounded-2xl p-4 shadow-lg backdrop-blur-md backdrop-filter">
         <div className="w-full rounded-2xl bg-white/10 p-4">
           <div className="pb-2 text-2xl font-semibold">Who Am I?</div>
@@ -182,7 +182,7 @@ const About = () => {
           </motion.a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
