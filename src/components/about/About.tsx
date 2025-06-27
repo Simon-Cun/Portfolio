@@ -46,7 +46,7 @@ const About = () => {
         <VerticalTitle title="ABOUT ME" />
       </div>
       <div className="flex h-[800px] w-[600px] flex-col items-center justify-between rounded-2xl bg-white/15 px-4 pb-4">
-        <div className="mt-4 flex w-full flex-col rounded-2xl bg-white/10 px-4 justify-center items-center">
+        <div className="mt-4 flex w-full flex-col items-center justify-center rounded-2xl bg-white/10 px-4">
           <div className="my-2 text-2xl font-semibold">My Music</div>
           <iframe
             style={{ borderRadius: "12px" }}
