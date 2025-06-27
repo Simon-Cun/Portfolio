@@ -3,7 +3,6 @@ import About from "@/components/about/About";
 import Projects from "@/components/projects/Projects";
 import Experience from "@/components/experience/Experience";
 import Gallery from "@/components/gallery/Gallery";
-import Contact from "@/components/contact/Contact";
 
 const Page = () => {
   return (
@@ -13,7 +12,6 @@ const Page = () => {
       <Projects />
       <Experience />
       <Gallery />
-      <Contact />
     </div>
   );
 };
