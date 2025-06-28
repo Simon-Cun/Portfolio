@@ -2,7 +2,6 @@ import "./globals.css";
 import { Antic_Didone } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navbar from "@/components/Navbar";
-import ClickSparkles from "@/components/ClickSparkles";
 
 const antic_didone = Antic_Didone({
   subsets: ["latin"],
@@ -27,7 +26,6 @@ export default function RootLayout({ children }: LayoutProps) {
         className={`overflow-x-hidden bg-black text-white ${antic_didone.className}`}
       >
         <Navbar />
-        <ClickSparkles />
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
       </body>
     </html>
