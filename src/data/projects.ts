@@ -4,108 +4,120 @@ export const ProjectData = [
   {
     title: "ACM Forge Autonomous Drones Project",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-    TechStack: ["React", "Tailwind CSS", "Firebase"],
+      "Designed and built a fully autonomous drone. Programmed flight control in Python, integrated sensors and cameras, and led hardware-software integration using SolidWorks and IMU calibration.",
+    TechStack: ["Python", "SolidWorks", "Git", "Rasberry Pi"],
     Links: {
-      github: "https://github.com/yourusername/repository",
-      demo: "https://demo-site.example.app",
+      github: "https://github.com/acm-ucr/drones-skyflow", // Update if specific repo available
     },
     features: [
-      "Responsive design for mobile and desktop",
-      "Dynamic event calendar with RSVP system",
-      "Admin panel for easy content updates",
+      "3D printed custom drone chassis",
+      "Stabilized autonomous flight with IMU calibration",
+      "Integrated camera and motor systems",
     ],
-    role: "Full Stack Developer",
-    date: "May 2025",
-    status: "Complete",
+    role: "Software & Mechanical Engineer",
+    date: "Feb 2025 – Present",
+    status: "In Progress",
     color: "bg-purple-200/20",
     image: {
       src: date2,
-      alt: "website thumbnail",
-    },
-  },
-  {
-    title: "Chinese Student Association Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-    TechStack: ["React", "Tailwind CSS", "Firebase"],
-    Links: {
-      github: "https://github.com/yourusername/repository",
-      demo: "https://demo-site.example.app",
-    },
-    features: [
-      "Responsive design for mobile and desktop",
-      "Dynamic event calendar with RSVP system",
-      "Admin panel for easy content updates",
-    ],
-    role: "Full Stack Developer",
-    date: "May 2025",
-    status: "Complete",
-    color: "bg-fuchsia-200/20",
-    image: {
-      src: date2,
-      alt: "website thumbnail",
+      alt: "drone project image",
     },
   },
   {
     title: "WUSHU Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-    TechStack: ["React", "Tailwind CSS", "Firebase"],
+      "Developed the official website for the UCR Wushu Club. Built interactive components with React and TypeScript, styled with Tailwind CSS, and used Framer Motion for animation.",
+    TechStack: [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Motion",
+      "Node.js",
+    ],
     Links: {
-      github: "https://github.com/yourusername/repository",
-      demo: "https://demo-site.example.app",
+      github: "https://github.com/Simon-Cun/Portfolio", // Replace with WUSHU repo if public
+      demo: "https://simoncun.vercel.app", // Or project link
     },
     features: [
-      "Responsive design for mobile and desktop",
-      "Dynamic event calendar with RSVP system",
-      "Admin panel for easy content updates",
+      "Dynamic event and team member showcase",
+      "Responsive design with smooth animations",
+      "Optimized performance using Next.js",
     ],
-    role: "Full Stack Developer",
-    date: "May 2025",
+    role: "Frontend Developer",
+    date: "Jan 2025 – Jun 2025",
     status: "Complete",
     color: "bg-pink-200/20",
     image: {
       src: date2,
-      alt: "website thumbnail",
+      alt: "wushu website screenshot",
     },
   },
   {
-    title: "Twice is Nice",
+    title: "CSA Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-    TechStack: ["React", "Tailwind CSS", "Firebase"],
+      "Built a modern club website for the Chinese Student Association at UCR. Collaborated on weekly sprints, implemented dynamic sections, and contributed to frontend development.",
+    TechStack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Motion",
+      "Node.js",
+    ],
     Links: {
-      github: "https://github.com/yourusername/repository",
-      demo: "https://demo-site.example.app",
+      github: "https://github.com/acm-ucr/csa-website", // Replace if project repo available
+      demo: "https://csa.ucrhighlanders.org/", // Or project link
     },
     features: [
-      "Responsive design for mobile and desktop",
-      "Dynamic event calendar with RSVP system",
-      "Admin panel for easy content updates",
+      "Club event listing and contact form",
+      "Modern responsive layout",
+      "Animated transitions using Motion",
     ],
-    role: "Full Stack Developer",
-    date: "May 2025",
+    role: "Frontend Developer",
+    date: "Oct 2024 – Dec 2024",
+    status: "Complete",
+    color: "bg-fuchsia-200/20",
+    image: {
+      src: date2,
+      alt: "csa website screenshot",
+    },
+  },
+  {
+    title: "Upcycle To Overcome",
+    description:
+      "Built a sustainability-themed web app during RoseHack 2025. Highlighted upcycling education with interactive UI and won the beginner track award.",
+    TechStack: ["HTML", "CSS", "JavaScript"],
+    Links: {
+      github: "https://github.com/Simon-Cun", // Replace with project repo if public
+    },
+    features: [
+      "Informational sections about sustainability",
+      "Interactive educational layout",
+      "Built in under 24 hours at a hackathon",
+    ],
+    role: "Frontend Developer",
+    date: "Jan 2025",
     status: "Complete",
     color: "bg-rose-200/20",
     image: {
       src: date2,
-      alt: "website thumbnail",
+      alt: "rosehack project image",
     },
   },
   {
-    title: "My Portfolio Website",
+    title: "Portfolio Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-    TechStack: ["React", "Tailwind CSS", "Firebase"],
+      "Personal website built to showcase projects, resume, and contact info. Designed with a clean UI and hosted on Vercel.",
+    TechStack: ["React", "Next.js", "Tailwind CSS"],
     Links: {
-      github: "https://github.com/yourusername/repository",
-      demo: "https://demo-site.example.app",
+      github: "https://github.com/Simon-Cun", // If repo is public
+      demo: "https://simoncun.vercel.app",
     },
     features: [
-      "Responsive design for mobile and desktop",
-      "Dynamic event calendar with RSVP system",
-      "Admin panel for easy content updates",
+      "Live project previews",
+      "Dark/light theme toggle",
+      "Mobile responsive layout",
     ],
     role: "Full Stack Developer",
     date: "May 2025",
@@ -113,30 +125,7 @@ export const ProjectData = [
     color: "bg-green-200/20",
     image: {
       src: date2,
-      alt: "website thumbnail",
-    },
-  },
-  {
-    title: "ULA Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-    TechStack: ["React", "Tailwind CSS", "Firebase"],
-    Links: {
-      github: "https://github.com/yourusername/repository",
-      demo: "https://demo-site.example.app",
-    },
-    features: [
-      "Responsive design for mobile and desktop",
-      "Dynamic event calendar with RSVP system",
-      "Admin panel for easy content updates",
-    ],
-    role: "Full Stack Developer",
-    date: "May 2025",
-    status: "Complete",
-    color: "bg-blue-200/20",
-    image: {
-      src: date2,
-      alt: "website thumbnail",
+      alt: "portfolio website screenshot",
     },
   },
 ];
