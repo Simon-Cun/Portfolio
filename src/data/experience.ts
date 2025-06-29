@@ -1,4 +1,4 @@
-import Bearylicious from "@/public/experience/bearylicious.png"
+import Bearylicious from "@/public/experience/bearylicious.png";
 import ACM from "@/public/experience/acm@ucr.webp";
 export const ExperienceData = [
   {

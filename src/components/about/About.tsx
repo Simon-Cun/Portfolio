@@ -63,7 +63,7 @@ const About = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-4 flex w-full flex-col pt-4 justify-center rounded-2xl bg-white/10 px-4">
+        <div className="mt-4 flex w-full flex-col justify-center rounded-2xl bg-white/10 px-4 pt-4">
           <div className="my-2 text-2xl font-semibold">My Music</div>
           <iframe
             style={{ borderRadius: "12px" }}

@@ -23,7 +23,7 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`overflow-x-hidden bg-black text-white text-lg ${antic_didone.className}`}
+        className={`overflow-x-hidden bg-black text-lg text-white ${antic_didone.className}`}
       >
         <Navbar />
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
