@@ -3,7 +3,7 @@ import TwiceIsNice from "@/public/projects/twiceisnice.png";
 import CSA from "@/public/projects/csa.png";
 import WUSHU from "@/public/projects/wushu.png";
 import Skyflow from "@/public/projects/skyflow.jpg";
-import ULA from "@/public/projects/ula.png"
+import ULA from "@/public/projects/ula.png";
 import { StaticImageData } from "next/image";
 export type Project = {
   title: string;
@@ -29,7 +29,13 @@ export const ProjectData: Project[] = [
     title: "Undergraduate Learning Assistant Website",
     description:
       " ULA - UCR CSE'S Undergraduate Learning Assistants that help improve the learning experience and community for students in undergraduate CS courses.",
-    TechStack: ["React", "Next.js", "TypeScript", "TailwindCSS", "TanStack-Query"],
+    TechStack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "TanStack-Query",
+    ],
     Links: {
       github: "https://github.com/acm-ucr/cse-ula",
       demo: "https://ula.ucrhighlanders.org/",
