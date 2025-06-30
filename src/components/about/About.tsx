@@ -54,8 +54,8 @@ const About = () => {
         <div className="w-full rounded-2xl bg-white/10 p-4">
           <div className="pb-2 text-2xl font-semibold">Who Am I?</div>
           <div className="w-full rounded-2xl bg-white/10 p-4">
-            I am a current student studying Computer Science and I am learning
-            Full-Stack ML/AI and Software Engineering.
+            「I am a current student studying Computer Science and I am learning
+            Full-Stack ML/AI and Software Engineering.」
           </div>
         </div>
         <div className="w-full rounded-2xl bg-white/10 p-4">
