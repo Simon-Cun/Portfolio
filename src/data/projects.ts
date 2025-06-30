@@ -1,13 +1,38 @@
 import date2 from "@/public/placeholder.webp";
+import Portfolio from "@/public/projects/portfolio.png"
+import TwiceIsNice from "@/public/projects/twiceisnice.png"
+import CSA from "@/public/projects/csa.png"
+import WUSHU from "@/public/projects/wushu.png"
+import Skyflow from "@/public/projects/skyflow.jpg"
+import { StaticImageData } from "next/image";
+export type Project = {
+  title: string;
+  description: string;
+  TechStack: string[];
+  Links: {
+    github: string;
+    demo?: string;
+  };
+  features: string[];
+  role: string;
+  date: string;
+  status: string;
+  color: string;
+  image: {
+    src: StaticImageData;
+    alt: string;
+  };
+};
 
-export const ProjectData = [
+export const ProjectData: Project[] = [
   {
     title: "ACM Forge Autonomous Drones Project",
     description:
       "Designed and built a fully autonomous drone. Programmed flight control in Python, integrated sensors and cameras, and led hardware-software integration using SolidWorks and IMU calibration.",
-    TechStack: ["Python", "SolidWorks", "Git", "Rasberry Pi"],
+    TechStack: ["Python", "SolidWorks", "Git", "Raspberry Pi"],
     Links: {
-      github: "https://github.com/acm-ucr/drones-skyflow", // Update if specific repo available
+      github: "https://github.com/acm-ucr/drones-skyflow",
+      demo: "#",
     },
     features: [
       "3D printed custom drone chassis",
@@ -19,8 +44,8 @@ export const ProjectData = [
     status: "In Progress",
     color: "bg-purple-200/20",
     image: {
-      src: date2,
-      alt: "drone project image",
+      src: Skyflow,
+      alt: "Drone Project Image",
     },
   },
   {
@@ -36,8 +61,8 @@ export const ProjectData = [
       "Node.js",
     ],
     Links: {
-      github: "https://github.com/Simon-Cun/Portfolio", // Replace with WUSHU repo if public
-      demo: "https://simoncun.vercel.app", // Or project link
+      github: "https://github.com/acm-ucr/wushu-website",
+      demo: "https://wushu.ucrhighlanders.org/",
     },
     features: [
       "Dynamic event and team member showcase",
@@ -49,12 +74,12 @@ export const ProjectData = [
     status: "Complete",
     color: "bg-pink-200/20",
     image: {
-      src: date2,
-      alt: "wushu website screenshot",
+      src: WUSHU,
+      alt: "Wushu Landing Page",
     },
   },
   {
-    title: "CSA Website",
+    title: "Chinese Student Association Website",
     description:
       "Built a modern club website for the Chinese Student Association at UCR. Collaborated on weekly sprints, implemented dynamic sections, and contributed to frontend development.",
     TechStack: [
@@ -66,8 +91,8 @@ export const ProjectData = [
       "Node.js",
     ],
     Links: {
-      github: "https://github.com/acm-ucr/csa-website", // Replace if project repo available
-      demo: "https://csa.ucrhighlanders.org/", // Or project link
+      github: "https://github.com/acm-ucr/csa-website",
+      demo: "https://csa.ucrhighlanders.org/",
     },
     features: [
       "Club event listing and contact form",
@@ -79,8 +104,8 @@ export const ProjectData = [
     status: "Complete",
     color: "bg-fuchsia-200/20",
     image: {
-      src: date2,
-      alt: "csa website screenshot",
+      src: CSA,
+      alt: "CSA Landing Page",
     },
   },
   {
@@ -89,7 +114,8 @@ export const ProjectData = [
       "Built a sustainability-themed web app during RoseHack 2025. Highlighted upcycling education with interactive UI and won the beginner track award.",
     TechStack: ["HTML", "CSS", "JavaScript"],
     Links: {
-      github: "https://github.com/Simon-Cun", // Replace with project repo if public
+      github: "https://github.com/Simon-Cun",
+      demo: "https://simon-cun.github.io/UpcycleToOvercome/", // placeholder if no live site
     },
     features: [
       "Informational sections about sustainability",
@@ -101,17 +127,17 @@ export const ProjectData = [
     status: "Complete",
     color: "bg-rose-200/20",
     image: {
-      src: date2,
-      alt: "rosehack project image",
+      src: TwiceIsNice,
+      alt: "RoseHack Website Landing Page",
     },
   },
   {
-    title: "Portfolio Website",
+    title: "My Personal Portfolio Website",
     description:
       "Personal website built to showcase projects, resume, and contact info. Designed with a clean UI and hosted on Vercel.",
     TechStack: ["React", "Next.js", "Tailwind CSS"],
     Links: {
-      github: "https://github.com/Simon-Cun", // If repo is public
+      github: "https://github.com/Simon-Cun/Portfolio",
       demo: "https://simoncun.vercel.app",
     },
     features: [
@@ -122,10 +148,10 @@ export const ProjectData = [
     role: "Full Stack Developer",
     date: "May 2025",
     status: "Complete",
-    color: "bg-green-200/20",
+    color: "bg-blue-200/20",
     image: {
-      src: date2,
-      alt: "portfolio website screenshot",
+      src: Portfolio,
+      alt: "My Portfolio Website Landing Page",
     },
   },
 ];

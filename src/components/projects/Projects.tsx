@@ -1,5 +1,7 @@
 import VerticalTitle from "@/components/VerticalTitle";
 import HorizontalTitle from "@/components/HorizontalTitle";
+import Link from "next/link";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
 import { ProjectData } from "@/data/projects";
 const Projects = () => {
@@ -63,9 +65,20 @@ const Projects = () => {
                     ))}
                   </div>
                   <div>{features}</div>
-                  <div>
-                    <div>{Links.demo}</div>
-                    <div>{Links.github}</div>
+                  <div className="flex items-center gap-8">
+                    <Link href={Links.github} target="_blank">
+                      <FaGithub size={50} />
+                    </Link>
+                    {Links.demo && (
+                      <Link
+                        href={Links.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Demo Site"
+                      >
+                        <FaExternalLinkAlt size={40} />
+                      </Link>
+                    )}
                   </div>
                 </div>
                 <div className="flex w-full justify-center md:w-auto md:justify-normal">
