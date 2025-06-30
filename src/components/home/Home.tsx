@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="relative flex w-full flex-col-reverse items-center justify-center md:h-screen md:flex-row md:pb-0 pb-20"
+      className="relative flex w-full flex-col-reverse items-center justify-center pb-20 md:h-screen md:flex-row md:pb-0"
     >
       <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
 
