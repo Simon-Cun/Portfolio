@@ -43,12 +43,12 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative flex w-full flex-col items-center justify-center gap-8 py-4 px-[2vw] md:px-[9vw] md:flex-row"
+      className="relative flex w-full flex-col items-center justify-center gap-8 px-[2vw] py-4 md:flex-row md:px-[9vw]"
     >
       <div className="block md:hidden">
-        <HorizontalTitle title="ABOUT ME"/>
+        <HorizontalTitle title="ABOUT ME" />
       </div>
-      <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent " />
+      <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
 
       <div className="flex w-full flex-col items-center gap-4 rounded-2xl shadow-lg backdrop-blur-md backdrop-filter">
         <div className="w-full rounded-2xl bg-white/10 p-4">
@@ -86,7 +86,7 @@ const About = () => {
       <div className="hidden md:block">
         <VerticalTitle title="ABOUT ME" />
       </div>
-      <div className="flex md:h-[800px] w-full flex-col items-center justify-center rounded-2xl pb-4">
+      <div className="flex w-full flex-col items-center justify-center rounded-2xl pb-4 md:h-[800px]">
         <div className="flex w-full flex-col items-center gap-4 rounded-2xl bg-white/10 p-4">
           <div className="text-2xl font-semibold">Contact Me</div>
 
