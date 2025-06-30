@@ -33,7 +33,7 @@ const getVisibleCount = (width: number) => {
 
 const TechIcons = () => {
   const [visibleCount, setVisibleCount] = useState(() =>
-    getVisibleCount(typeof window !== "undefined" ? window.innerWidth : 1024)
+    getVisibleCount(typeof window !== "undefined" ? window.innerWidth : 1024),
   );
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const TechIcons = () => {
         <div
           key={idx}
           title={name}
-          className="hover:scale-115 hover:drop-shadow-[0_0_50px_white] transition-transform"
+          className="transition-transform hover:scale-115 hover:drop-shadow-[0_0_50px_white]"
         >
           {icon}
         </div>
