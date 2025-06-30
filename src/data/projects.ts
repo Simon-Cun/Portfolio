@@ -3,6 +3,7 @@ import TwiceIsNice from "@/public/projects/twiceisnice.png";
 import CSA from "@/public/projects/csa.png";
 import WUSHU from "@/public/projects/wushu.png";
 import Skyflow from "@/public/projects/skyflow.jpg";
+import ULA from "@/public/projects/ula.png"
 import { StaticImageData } from "next/image";
 export type Project = {
   title: string;
@@ -25,6 +26,29 @@ export type Project = {
 
 export const ProjectData: Project[] = [
   {
+    title: "Undergraduate Learning Assistant Website",
+    description:
+      " ULA - UCR CSE'S Undergraduate Learning Assistants that help improve the learning experience and community for students in undergraduate CS courses.",
+    TechStack: ["React", "Next.js", "TypeScript", "TailwindCSS", "TanStack-Query"],
+    Links: {
+      github: "https://github.com/acm-ucr/cse-ula",
+      demo: "https://ula.ucrhighlanders.org/",
+    },
+    features: [
+      "3D printed custom drone chassis",
+      "Stabilized autonomous flight with IMU calibration",
+      "Integrated camera and motor systems",
+    ],
+    role: "Web Developer",
+    date: "June 2025 – Present",
+    status: "Ongoing",
+    color: "bg-violet-200/20",
+    image: {
+      src: ULA,
+      alt: "Undergraduate Learning Assistant Landing Page",
+    },
+  },
+  {
     title: "ACM Forge Autonomous Drones Project",
     description:
       "Designed and built a fully autonomous drone. Programmed flight control in Python, integrated sensors and cameras, and led hardware-software integration using SolidWorks and IMU calibration.",
@@ -40,7 +64,7 @@ export const ProjectData: Project[] = [
     ],
     role: "Software & Mechanical Engineer",
     date: "Feb 2025 – Present",
-    status: "In Progress",
+    status: "Ongoing",
     color: "bg-purple-200/20",
     image: {
       src: Skyflow,
