@@ -54,7 +54,7 @@ export const ProjectData: Project[] = [
     TechStack: [
       "React",
       "Next.js",
-      "Tailwind CSS",
+      "TailwindCSS",
       "TypeScript",
       "Motion",
       "Node.js",
@@ -85,7 +85,7 @@ export const ProjectData: Project[] = [
       "React",
       "Next.js",
       "TypeScript",
-      "Tailwind CSS",
+      "TailwindCSS",
       "Motion",
       "Node.js",
     ],
@@ -134,7 +134,7 @@ export const ProjectData: Project[] = [
     title: "My Personal Portfolio Website",
     description:
       "Personal website built to showcase projects, resume, and contact info. Designed with a clean UI and hosted on Vercel.",
-    TechStack: ["React", "Next.js", "Tailwind CSS"],
+    TechStack: ["React", "Next.js", "TailwindCSS"],
     Links: {
       github: "https://github.com/Simon-Cun/Portfolio",
       demo: "https://simoncun.vercel.app",

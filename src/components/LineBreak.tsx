@@ -45,7 +45,7 @@ const TechIcons = () => {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-center gap-4 text-[3.6vw] text-white">
+    <div className="flex flex-wrap justify-center gap-4 text-[3.3vw] text-white">
       {techIconsArray.slice(0, visibleCount).map(({ icon, name }, idx) => (
         <div
           key={idx}
