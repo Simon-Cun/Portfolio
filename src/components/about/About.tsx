@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import VerticalTitle from "@/components/VerticalTitle";
+import HorizontalTitle from "@/components/HorizontalTitle";
 
 const About = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -42,11 +43,14 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative flex w-full flex-col items-center justify-center gap-8 py-4 md:flex-row"
+      className="relative flex w-full flex-col items-center justify-center gap-8 py-4 px-[2vw] md:px-[9vw] md:flex-row"
     >
-      <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
+      <div className="block md:hidden">
+        <HorizontalTitle title="ABOUT ME"/>
+      </div>
+      <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent " />
 
-      <div className="flex w-[600px] flex-col items-center gap-4 rounded-2xl p-4 shadow-lg backdrop-blur-md backdrop-filter">
+      <div className="flex w-full flex-col items-center gap-4 rounded-2xl shadow-lg backdrop-blur-md backdrop-filter">
         <div className="w-full rounded-2xl bg-white/10 p-4">
           <div className="pb-2 text-2xl font-semibold">Who Am I?</div>
           <div className="w-full rounded-2xl bg-white/10 p-4">
@@ -79,10 +83,10 @@ const About = () => {
         </div>
       </div>
 
-      <div>
+      <div className="hidden md:block">
         <VerticalTitle title="ABOUT ME" />
       </div>
-      <div className="flex h-[800px] w-[600px] flex-col items-center justify-center rounded-2xl px-4 pb-4">
+      <div className="flex md:h-[800px] w-full flex-col items-center justify-center rounded-2xl pb-4">
         <div className="flex w-full flex-col items-center gap-4 rounded-2xl bg-white/10 p-4">
           <div className="text-2xl font-semibold">Contact Me</div>
 
