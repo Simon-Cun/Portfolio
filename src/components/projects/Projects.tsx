@@ -90,7 +90,11 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  <p className="text-center md:text-left">{features}</p>
+                  <ul className="list-disc pl-6 text-center md:text-left">
+                    {features.map((feature, index) => (
+                      <li key={index}>{feature}</li>
+                    ))}
+                  </ul>
 
                   <div className="flex justify-center gap-6 md:justify-start">
                     <Link href={Links.github} target="_blank">

@@ -4,6 +4,7 @@ import CSA from "@/public/projects/csa.png";
 import WUSHU from "@/public/projects/wushu.png";
 import Skyflow from "@/public/projects/skyflow.jpg";
 import ULA from "@/public/projects/ula.png";
+import SpaceCalculator from "@/public/projects/spacecalculator.png";
 import { StaticImageData } from "next/image";
 export type Project = {
   title: string;
@@ -55,7 +56,7 @@ export const ProjectData: Project[] = [
     title: "My Personal Portfolio Website",
     date: "May 2025",
     status: "Complete",
-    color: "bg-sky-200/20",
+    color: "bg-sky-100/20",
     image: { src: Portfolio, alt: "My Portfolio Website Landing Page" },
     description:
       "Personal website built to showcase projects, resume, and contact info. Designed with a clean UI and hosted on Vercel.",
@@ -120,7 +121,7 @@ export const ProjectData: Project[] = [
     role: "Frontend Developer",
   },
   {
-    title: "Upcycle To Overcome",
+    title: "Upcycle To Overcome - RoseHack 2025",
     date: "Jan 2025",
     status: "Complete",
     color: "bg-rose-200/20",
@@ -165,5 +166,28 @@ export const ProjectData: Project[] = [
       "Animated transitions using Motion",
     ],
     role: "Frontend Developer",
+  },
+  {
+    title: "Space Calculator - Cutie Hack 2024",
+    description:
+      "Created a space-themed calculator web app during Cutie Hack 2024 that combined playful design with interactive math operations. Designed galaxy visuals with CSS and implemented logic for real-time calculations.",
+    TechStack: ["HTML", "CSS", "JavaScript"],
+    Links: {
+      github: "https://github.com/aschu042/cutieHack",
+      demo: "https://evabao007.github.io/",
+    },
+    features: [
+      "Fully functional calculator with keyboard support",
+      "Space-themed UI with animated galaxy background",
+      "Built in under 12 hours at a hackathon",
+    ],
+    role: "Backend Developer",
+    date: "Nov 2024",
+    status: "Complete",
+    color: "bg-gray-700/20",
+    image: {
+      src: SpaceCalculator, // Replace with screenshot if available
+      alt: "Space-themed calculator interface",
+    },
   },
 ];
