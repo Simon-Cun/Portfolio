@@ -1,15 +1,18 @@
 import VerticalTitle from "@/components/VerticalTitle";
 import HorizontalTitle from "@/components/HorizontalTitle";
 import Link from "next/link";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
+import LineBreak from "@/components/LineBreak";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { ProjectData } from "@/data/projects";
 const Projects = () => {
   return (
     <section
       id="projects"
-      className="left-0 w-full justify-center border-b-1 py-20 pb-52 md:flex md:pb-96 md:pl-10"
+      className="relative left-0 w-full justify-center py-20 pb-52 md:flex md:pb-96 md:pl-10"
     >
+      <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
+
       <div className="sticky">
         <div className="sticky top-0 hidden md:top-[50px] md:block">
           <VerticalTitle title="PROJECTS" />
@@ -21,6 +24,9 @@ const Projects = () => {
         </div>
       </div>
       <div className="sticky top-[50px]">
+        <div className="sticky top-[50px] hidden w-full justify-center md:block">
+          <LineBreak />
+        </div>
         <div className="sticky flex w-full flex-col justify-center gap-20">
           {ProjectData.map(
             (
@@ -69,7 +75,7 @@ const Projects = () => {
                     <Link href={Links.github} target="_blank">
                       <FaGithub size={50} />
                     </Link>
-                    {Links.demo && (
+                    {Links.demo && Links.demo !== "#" && (
                       <Link
                         href={Links.demo}
                         target="_blank"

@@ -6,8 +6,10 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="flex w-full flex-col items-center justify-center border-b-1 py-20"
+      className="relative flex w-full flex-col items-center justify-center py-20"
     >
+      <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
+
       <HorizontalTitle title="Experience" />
       <div className="mt-20 w-[80%]">
         {ExperienceData.map((item, idx) => (

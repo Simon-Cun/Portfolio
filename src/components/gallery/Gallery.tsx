@@ -8,10 +8,7 @@ export type GalleryItem = {
 };
 const Gallery = () => {
   return (
-    <section
-      id="gallery"
-      className="h-auto w-full justify-center border-b-1 py-20"
-    >
+    <section id="gallery" className="h-auto w-full justify-center py-20">
       <div className="flex w-full justify-center">
         <HorizontalTitle title="GALLERY" />
       </div>

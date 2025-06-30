@@ -114,7 +114,7 @@ export const ProjectData: Project[] = [
     TechStack: ["HTML", "CSS", "JavaScript"],
     Links: {
       github: "https://github.com/Simon-Cun",
-      demo: "https://simon-cun.github.io/UpcycleToOvercome/", // placeholder if no live site
+      demo: "https://simon-cun.github.io/UpcycleToOvercome/",
     },
     features: [
       "Informational sections about sustainability",

@@ -20,9 +20,7 @@ const ExperienceCard = ({
 }: ExperienceCardProps) => {
   return (
     <div className="mb-8 w-full rounded-xl border-b border-white/20 bg-white/5 p-6 shadow-md backdrop-blur-md">
-      {/* Top: Image, Title, Role, Location + Date */}
       <div className="flex flex-col items-start gap-3 md:flex-row md:items-center md:justify-between">
-        {/* Left: logo + title + role */}
         <div className="flex items-center gap-4">
           <Image
             src={logo}
@@ -44,7 +42,6 @@ const ExperienceCard = ({
         </div>
       </div>
 
-      {/* Bottom: bullet list */}
       <ul className="mt-4 list-disc space-y-1 pl-4 text-white/90">
         {information.map((point, index) => (
           <li key={index}>{point}</li>
