@@ -19,7 +19,7 @@ const ExperienceCard = ({
   information,
 }: ExperienceCardProps) => {
   return (
-    <div className="mb-8 w-full rounded-xl border-b border-white/20 bg-white/5 p-6 shadow-md backdrop-blur-md">
+    <div className="w-full rounded-xl border-b border-white/20 bg-white/5 p-6 shadow-md backdrop-blur-md">
       <div className="flex flex-col items-start gap-3 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-4">
           <Image

@@ -11,7 +11,7 @@ const Experience = () => {
       <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
 
       <HorizontalTitle title="Experience" />
-      <div className="mt-20 w-[80%]">
+      <div className="mt-20 flex w-[80%] flex-col gap-y-8">
         {ExperienceData.map((item, idx) => (
           <ExperienceCard key={idx} {...item} />
         ))}
