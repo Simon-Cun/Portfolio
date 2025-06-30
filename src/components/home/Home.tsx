@@ -6,9 +6,8 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="relative flex w-full flex-col-reverse items-center justify-center md:h-screen md:flex-row"
+      className="relative flex w-full flex-col-reverse items-center justify-center md:h-screen md:flex-row md:pb-0 pb-20"
     >
-      {/* Bottom border: white in the center, fades to transparent on sides */}
       <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
 
       <div className="flex w-full flex-col items-center gap-8">
