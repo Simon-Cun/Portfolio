@@ -1,9 +1,9 @@
 import date2 from "@/public/placeholder.webp";
-import Portfolio from "@/public/projects/portfolio.png"
-import TwiceIsNice from "@/public/projects/twiceisnice.png"
-import CSA from "@/public/projects/csa.png"
-import WUSHU from "@/public/projects/wushu.png"
-import Skyflow from "@/public/projects/skyflow.jpg"
+import Portfolio from "@/public/projects/portfolio.png";
+import TwiceIsNice from "@/public/projects/twiceisnice.png";
+import CSA from "@/public/projects/csa.png";
+import WUSHU from "@/public/projects/wushu.png";
+import Skyflow from "@/public/projects/skyflow.jpg";
 import { StaticImageData } from "next/image";
 export type Project = {
   title: string;
