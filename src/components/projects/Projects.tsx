@@ -12,31 +12,21 @@ const Projects = () => {
       id="projects"
       className="relative w-full justify-center py-20 pb-52 md:flex md:pb-96 md:pl-10"
     >
-      {/* Gradient Line */}
       <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
-
-      {/* Sticky Vertical Title (Desktop Only) */}
       <div className="md:sticky md:top-[50px]">
         <div className="hidden md:sticky md:top-[50px] md:block">
           <VerticalTitle title="PROJECTS" />
         </div>
       </div>
-
-      {/* Sticky Horizontal Title (Mobile Only) */}
       <div className="mb-6 flex justify-center md:static md:top-0 md:hidden">
         <div className="sticky top-[20px] flex w-full justify-center md:static md:top-0">
           <HorizontalTitle title="PROJECTS" />
         </div>
       </div>
-
-      {/* Main Content */}
       <div className="flex w-full flex-col gap-8 px-4 md:pl-10">
-        {/* Line Break (Sticky on Desktop Only) */}
         <div className="hidden w-full justify-center md:sticky md:top-[50px] md:block">
           <LineBreak />
         </div>
-
-        {/* Project Cards */}
         {ProjectData.map(
           (
             {
@@ -65,7 +55,6 @@ const Projects = () => {
                   zIndex: ProjectData.length + index,
                 }}
               >
-                {/* Text Content */}
                 <div className="flex w-full flex-col gap-4 md:w-2/3">
                   <h2 className="text-center text-3xl sm:text-4xl md:text-left">
                     {title}
@@ -112,8 +101,6 @@ const Projects = () => {
                     )}
                   </div>
                 </div>
-
-                {/* Image */}
                 <div className="flex justify-center md:w-1/3">
                   <Image
                     src={image.src}
