@@ -51,16 +51,16 @@ const About = () => {
       <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
 
       <div className="flex w-full flex-col items-center gap-4 rounded-2xl shadow-lg backdrop-blur-md backdrop-filter">
-        <div className="w-full rounded-2xl bg-white/10 p-4">
+        <div className="w-full rounded-2xl bg-white/5 p-4">
           <div className="pb-2 text-2xl font-semibold">Who Am I?</div>
-          <div className="w-full rounded-2xl bg-white/10 p-4">
+          <div className="w-full rounded-2xl bg-white/5 p-4">
             「I am a current student studying Computer Science and I am learning
             Full-Stack ML/AI and Software Engineering.」
           </div>
         </div>
-        <div className="w-full rounded-2xl bg-white/10 p-4">
+        <div className="w-full rounded-2xl bg-white/5 p-4">
           <div className="pb-2 text-2xl font-semibold">Hobbies & Interests</div>
-          <div className="flex w-full rounded-2xl bg-white/10 p-4">
+          <div className="flex w-full rounded-2xl bg-white/5 p-4">
             <ul className="list-disc pl-4">
               <li>Art</li>
               <li>Korean</li>
@@ -69,7 +69,7 @@ const About = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-4 flex w-full flex-col justify-center rounded-2xl bg-white/10 px-4 pt-4">
+        <div className="mt-4 flex w-full flex-col justify-center rounded-2xl bg-white/5 px-4 pt-4">
           <div className="my-2 text-2xl font-semibold">My Music</div>
           <iframe
             style={{ borderRadius: "12px" }}
@@ -87,10 +87,10 @@ const About = () => {
         <VerticalTitle title="ABOUT ME" />
       </div>
       <div className="flex w-full flex-col items-center justify-center rounded-2xl pb-4 md:h-[800px]">
-        <div className="flex w-full flex-col items-center gap-4 rounded-2xl bg-white/10 p-4">
+        <div className="flex w-full flex-col items-center gap-4 rounded-2xl bg-white/5 p-4">
           <div className="text-2xl font-semibold">Contact Me</div>
 
-          <div className="w-full rounded-xl bg-white/10 p-4 text-white">
+          <div className="w-full rounded-xl bg-white/5 p-4 text-white">
             <h3 className="mb-2 text-lg font-semibold">Leave a Message</h3>
             <form
               ref={formRef}
