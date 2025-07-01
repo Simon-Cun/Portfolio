@@ -67,7 +67,6 @@ export const ProjectData: Project[] = [
     },
     features: [
       "Live project previews",
-      "Dark/light theme toggle",
       "Mobile responsive layout",
     ],
     role: "Full Stack Developer",
