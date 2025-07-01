@@ -65,10 +65,7 @@ export const ProjectData: Project[] = [
       github: "https://github.com/Simon-Cun/Portfolio",
       demo: "https://simoncun.vercel.app",
     },
-    features: [
-      "Live project previews",
-      "Mobile responsive layout",
-    ],
+    features: ["Live project previews", "Mobile responsive layout"],
     role: "Full Stack Developer",
   },
   {
