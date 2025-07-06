@@ -15,8 +15,4 @@ export const tags = [
     name: "EXPERIENCE",
     link: "#experience",
   },
-  {
-    name: "GALLERY",
-    link: "#gallery",
-  },
 ];
