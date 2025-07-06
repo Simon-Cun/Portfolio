@@ -2,7 +2,6 @@ import Home from "@/components/home/Home";
 import About from "@/components/about/About";
 import Projects from "@/components/projects/Projects";
 import Experience from "@/components/experience/Experience";
-import Gallery from "@/components/gallery/Gallery";
 import Footer from "@/components/Footer";
 
 const Page = () => {
@@ -12,7 +11,6 @@ const Page = () => {
       <About />
       <Projects />
       <Experience />
-      <Gallery />
       <Footer />
     </div>
   );
