@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Title from "@/components/VerticalTitle";
-import Cat from "@/public/cat.jpg";
+import Me from "@/public/image.png";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <div className="flex w-full flex-col items-center gap-8">
         <div className="rounded-2xl bg-gradient-to-r from-white via-transparent to-black p-[4px]">
           <Image
-            src={Cat}
+            src={Me}
             alt="Photo of Me"
             className="w-[300px] shrink-0 rounded-2xl object-contain md:w-[400px]"
           />
