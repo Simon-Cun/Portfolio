@@ -169,7 +169,7 @@ const About = () => {
           </div>
 
           <motion.a
-            href="/your-resume.pdf"
+            href="/Simon_Cun_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ y: -4, scale: 1.1 }}
