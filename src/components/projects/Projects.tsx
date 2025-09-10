@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react";
 import VerticalTitle from "@/components/VerticalTitle";
 import HorizontalTitle from "@/components/HorizontalTitle";
 import Link from "next/link";
@@ -7,113 +9,106 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { ProjectData } from "@/data/projects";
 
 const Projects = () => {
+  const overlap = 10; // how much each card stacks
+
+
   return (
     <section
       id="projects"
-      className="relative w-full justify-center py-20 pb-52 md:flex md:pb-96 md:pl-10"
+      className="relative w-full py-20 md:flex md:pl-10"
     >
       <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
-      <div className="md:sticky md:top-[50px]">
-        <div className="hidden md:sticky md:top-[50px] md:block">
-          <VerticalTitle title="PROJECTS" />
-        </div>
+
+      <div className="hidden md:sticky md:top-[50px] md:block">
+        <VerticalTitle title="PROJECTS" />
       </div>
-      <div className="mb-6 flex justify-center md:static md:top-0 md:hidden">
-        <div className="sticky top-[20px] flex w-full justify-center md:static md:top-0">
+
+      <div className="mb-6 flex justify-center md:hidden">
+        <div className="sticky top-[20px] flex w-full justify-center">
           <HorizontalTitle title="PROJECTS" />
         </div>
       </div>
-      <div className="flex w-full flex-col gap-8 px-4 md:pl-10">
-        <div className="hidden w-full justify-center md:sticky md:top-[50px] md:block">
+
+      <div className="flex w-full flex-col gap-0 px-4 md:pl-10">
+        <div className="hidden md:block pb-4">
           <LineBreak />
         </div>
-        {ProjectData.map(
-          (
-            {
-              title,
-              description,
-              TechStack,
-              Links,
-              features,
-              role,
-              date,
-              status,
-              color,
-              image,
-            },
-            index,
-          ) => {
-            const isLast = index === ProjectData.length - 1;
-            const topClass = isLast ? "md:top-[80px]" : "md:top-[50px]";
 
-            return (
-              <div
-                key={index}
-                className={`rounded-4xl border border-white/20 p-5 shadow-lg backdrop-blur-md backdrop-filter md:sticky ${topClass} md:p-10 ${color} flex flex-col gap-6 md:flex-row`}
-                style={{
-                  transform: `translateY(${index * 24}px)`,
-                  zIndex: ProjectData.length + index,
-                }}
-              >
-                <div className="flex w-full flex-col gap-4 md:w-2/3">
-                  <h2 className="text-center text-3xl sm:text-4xl md:text-left">
-                    {title}
-                  </h2>
+        {ProjectData.map((project, index) => {
+          const zIndex = index + 1; // now first in array is bottom card
 
-                  <div className="flex flex-wrap justify-center gap-3 text-sm md:justify-start">
-                    <span>{role}</span>
-                    <span>{date}</span>
-                    <span>{status}</span>
-                  </div>
+          return (
+            <motion.div
+              key={index}
+              className={`flex flex-col gap-6 border border-white/20 p-5 shadow-lg backdrop-blur-md backdrop-filter md:flex-row md:p-10 ${project.color} md:sticky`}
+              style={{
+                top: `${index * overlap}px`, // stack downward
+                zIndex,
+                marginTop: index === 0 ? 0 : `-${overlap}px`,
+              }}
+              
+            >
+              <div className="flex w-full flex-col gap-4 md:w-2/3">
+                <h2 className="text-center text-3xl sm:text-4xl md:text-left">
+                  {project.title}
+                </h2>
 
-                  <p className="text-center md:text-left">{description}</p>
-
-                  <div className="flex flex-wrap justify-center gap-2 md:justify-start">
-                    {TechStack.map((tech, i) => (
-                      <span
-                        key={i}
-                        className="rounded-lg bg-white/10 px-3 py-1 text-sm"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  <ul className="list-disc pl-6 text-center md:text-left">
-                    {features.map((feature, index) => (
-                      <li key={index}>{feature}</li>
-                    ))}
-                  </ul>
-
-                  <div className="flex justify-center gap-6 md:justify-start">
-                    <Link href={Links.github} target="_blank">
-                      <FaGithub size={40} />
-                    </Link>
-                    {Links.demo && Links.demo !== "#" && (
-                      <Link
-                        href={Links.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Demo Site"
-                      >
-                        <FaExternalLinkAlt size={30} />
-                      </Link>
-                    )}
-                  </div>
+                <div className="flex flex-wrap justify-center gap-3 text-sm md:justify-start">
+                  <span>{project.role}</span>
+                  <span>{project.date}</span>
+                  <span>{project.status}</span>
                 </div>
-                <div className="flex justify-center md:w-1/3">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={500}
-                    height={300}
-                    className="w-full max-w-xs object-contain sm:max-w-md"
-                  />
+
+                <p className="text-center md:text-left">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap justify-center gap-2 md:justify-start">
+                  {project.TechStack.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="rounded-lg bg-white/10 px-3 py-1 text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <ul className="list-disc pl-6 text-center md:text-left">
+                  {project.features.map((feature, i) => (
+                    <li key={i}>{feature}</li>
+                  ))}
+                </ul>
+
+                <div className="flex justify-center gap-6 md:justify-start">
+                  <Link href={project.Links.github} target="_blank">
+                    <FaGithub size={40} />
+                  </Link>
+                  {project.Links.demo && project.Links.demo !== "#" && (
+                    <Link
+                      href={project.Links.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Demo Site"
+                    >
+                      <FaExternalLinkAlt size={30} />
+                    </Link>
+                  )}
                 </div>
               </div>
-            );
-          },
-        )}
+
+              <div className="flex justify-center md:w-1/3">
+                <Image
+                  src={project.image.src}
+                  alt={project.image.alt}
+                  width={500}
+                  height={300}
+                  className="w-full max-w-xs object-contain sm:max-w-md"
+                />
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
     </section>
   );

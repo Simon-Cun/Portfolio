@@ -11,11 +11,11 @@ const Home = () => {
       <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
 
       <div className="flex w-full flex-col items-center gap-8">
-        <div className="rounded-2xl bg-gradient-to-r from-white via-transparent to-black p-[4px]">
+        <div className="bg-gradient-to-r from-white via-transparent to-black p-[2px]">
           <Image
             src={Me}
             alt="Photo of Me"
-            className="w-[300px] shrink-0 rounded-2xl object-contain md:w-[400px]"
+            className="w-[300px] shrink-0 object-contain md:w-[400px]"
           />
         </div>
 
