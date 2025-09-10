@@ -11,12 +11,8 @@ import { ProjectData } from "@/data/projects";
 const Projects = () => {
   const overlap = 10; // how much each card stacks
 
-
   return (
-    <section
-      id="projects"
-      className="relative w-full py-20 md:flex md:pl-10"
-    >
+    <section id="projects" className="relative w-full py-20 md:flex md:pl-10">
       <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
 
       <div className="hidden md:sticky md:top-[50px] md:block">
@@ -30,7 +26,7 @@ const Projects = () => {
       </div>
 
       <div className="flex w-full flex-col gap-0 px-4 md:pl-10">
-        <div className="hidden md:block pb-4">
+        <div className="hidden pb-4 md:block">
           <LineBreak />
         </div>
 
@@ -46,7 +42,6 @@ const Projects = () => {
                 zIndex,
                 marginTop: index === 0 ? 0 : `-${overlap}px`,
               }}
-              
             >
               <div className="flex w-full flex-col gap-4 md:w-2/3">
                 <h2 className="text-center text-3xl sm:text-4xl md:text-left">
