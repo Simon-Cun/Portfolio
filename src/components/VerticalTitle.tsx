@@ -12,11 +12,13 @@ const VerticalTitle = ({ title }: { title: string }) => {
         >
           <div className="pointer-events-none absolute inset-y-0 left-0 w-[2px] bg-gradient-to-b from-transparent via-white to-transparent" />
           <div className="pointer-events-none absolute inset-y-0 right-0 w-[2px] bg-gradient-to-b from-transparent via-white to-transparent" />
-          {word.split("").map((char, charIndex) => (
-            <span key={charIndex} className="block">
-              {char}
-            </span>
-          ))}
+          <div className="bg-gradient-to-b from-white via-sky-300 to-white bg-clip-text text-transparent">
+            {word.split("").map((char, charIndex) => (
+              <span key={charIndex} className="block">
+                {char}
+              </span>
+            ))}
+          </div>
         </div>
       ))}
     </div>
