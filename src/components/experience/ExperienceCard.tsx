@@ -23,19 +23,17 @@ const ExperienceCard = ({
       <div className="flex flex-col items-start gap-3 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-4">
           <Image src={logo} alt={title} width={100} height={100} />
-          <div>
-            <h3 className="text-lg font-semibold">{title}</h3>
-            <p className="text-gray-400">{role}</p>
+          <div className="flex flex-col">
+            <div className="text-2xl font-semibold text-white">{title}</div>
+            <div className="text-lg text-gray-300">{role}</div>
           </div>
         </div>
-
-        <div className="mt-2 text-left text-gray-400 md:mt-0 md:text-right">
-          <p className="">{location}</p>
-          <p className="">{date}</p>
+        <div className="mt-2 text-left text-gray-300 md:mt-0 md:text-right">
+          <div className="text-lg">{location}</div>
+          <div className="text-lg">{date}</div>
         </div>
       </div>
-
-      <ul className="mt-4 list-disc space-y-1 pl-4 text-white/90">
+      <ul className="mt-4 list-disc space-y-2 pl-5 text-xl text-white">
         {information.map((point, index) => (
           <li key={index}>{point}</li>
         ))}
