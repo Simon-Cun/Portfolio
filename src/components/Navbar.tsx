@@ -4,7 +4,7 @@ import ScrollLink from "@/components/ScrollLink";
 
 const Navbar = () => {
   return (
-    <div className="text-xl sticky top-0 z-50 hidden w-full py-3 md:block">
+    <div className="sticky top-0 z-50 hidden w-full py-3 text-xl md:block">
       <div className="relative flex items-center justify-center">
         <ScrollLink
           to="#home"
