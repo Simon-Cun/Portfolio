@@ -1,13 +1,5 @@
 "use client";
 
-import {
-  FaInstagram,
-  FaLinkedin,
-  FaEnvelope,
-  FaFileAlt,
-  FaGithub,
-} from "react-icons/fa";
-import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import VerticalTitle from "@/components/VerticalTitle";
@@ -130,55 +122,6 @@ const About = () => {
               )}
             </form>
           </div>
-
-          <div className="flex gap-4">
-            {[
-              {
-                icon: <FaInstagram />,
-                href: "https://www.instagram.com/simonc2992/",
-                hover: "hover:text-pink-200",
-              },
-              {
-                icon: <FaEnvelope />,
-                href: "mailto:simoncun2586@gmail.com",
-                hover: "hover:text-red-200",
-              },
-              {
-                icon: <FaLinkedin />,
-                href: "https://www.linkedin.com/in/simon-cun-3760a8333/",
-                hover: "hover:text-blue-200",
-              },
-              {
-                icon: <FaGithub />,
-                href: "https://github.com/Simon-Cun",
-                hover: "hover:text-purple-200",
-              },
-            ].map(({ icon, href, hover }, i) => (
-              <motion.a
-                key={i}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ y: -4, scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 300 }}
-                className={`rounded-lg bg-blue-300/10 p-2 text-white ${hover}`}
-              >
-                <div className="text-2xl">{icon}</div>
-              </motion.a>
-            ))}
-          </div>
-
-          <motion.a
-            href="/Simon_Cun_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ y: -4, scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            className="flex cursor-pointer items-center gap-2 rounded-lg bg-blue-300/10 px-4 py-2 text-white transition hover:bg-white/30"
-          >
-            <FaFileAlt />
-            View Resume
-          </motion.a>
         </div>
       </div>
     </section>
