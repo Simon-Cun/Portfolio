@@ -36,7 +36,7 @@ const Projects = () => {
           return (
             <motion.div
               key={index}
-              className={`flex flex-col gap-6 border border-white/20 p-5 shadow-lg backdrop-blur-md backdrop-filter md:flex-row md:p-10 rounded-2xl ${project.color} md:sticky`}
+              className={`flex flex-col gap-6 rounded-2xl border border-white/20 p-5 shadow-lg backdrop-blur-md backdrop-filter md:flex-row md:p-10 ${project.color} md:sticky`}
               style={{
                 top: `${index * overlap}px`, // stack downward
                 zIndex,
