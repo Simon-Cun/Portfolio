@@ -46,7 +46,7 @@ export const ProjectData: Project[] = [
       "Gemini API",
     ],
     Links: {
-      github: "https://github.com/kellyma626/cutieMood", // replace with repo if separate
+      github: "https://github.com/kellyma626/cutieMood",
       demo: "#",
     },
     features: [
