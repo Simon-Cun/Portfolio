@@ -1,12 +1,16 @@
 import "./globals.css";
-import { Playfair_Display } from "next/font/google";
+import { Playfair_Display, Nunito } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navbar from "@/components/Navbar";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  variable: "--playfair-font",
+  variable: "--font-playfair",
+});
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  variable: "--font-nunito",
 });
 
 export const metadata = {
@@ -38,12 +42,9 @@ export default function RootLayout({ children }: LayoutProps) {
   });
 
   return (
-    <html lang="en">
-      <body
-        className={`overflow-x-hidden bg-black text-lg text-white ${playfair.className} relative`}
-      >
+    <html lang="en" className={`${nunito.variable} ${playfair.variable}`}>
+      <body className="font-nunito relative overflow-x-hidden bg-black text-lg text-white">
         {stars}
-
         <Navbar />
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
       </body>

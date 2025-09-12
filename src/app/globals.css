@@ -45,3 +45,10 @@
     opacity: 1;
   }
 }
+.font-nunito {
+  font-family: var(--font-nunito), sans-serif;
+}
+
+.font-playfair {
+  font-family: var(--font-playfair), serif;
+}
