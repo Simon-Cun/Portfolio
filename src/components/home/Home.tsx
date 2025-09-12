@@ -17,10 +17,7 @@ const Home = () => {
       className="relative flex w-full flex-col items-center justify-center pb-20 md:h-screen md:flex-row md:pb-0"
     >
       <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
-
-      {/* Foreground content */}
       <div className="flex w-full max-w-5xl flex-col items-center justify-center gap-10 px-4 md:flex-row">
-        {/* Gradient border wrapper */}
         <div className="rounded-2xl bg-gradient-to-r from-white via-transparent to-black p-[2px]">
           <Image
             src={Me}
@@ -75,7 +72,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex w-1/4 justify-center">
+      <div className="order-first my-10 flex w-1/4 justify-center md:order-none md:my-0">
         <Title title="SIMON SAU CUN" />
       </div>
     </section>

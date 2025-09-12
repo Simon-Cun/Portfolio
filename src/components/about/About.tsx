@@ -47,8 +47,8 @@ const About = () => {
         <VerticalTitle title="ABOUT ME" />
       </div>
       <div className="flex w-full flex-col items-center justify-center rounded-2xl pb-4 md:h-[800px]">
-        <div className="mb-4 w-full rounded-2xl bg-white/5 p-4">
-          <div className="pb-2 text-2xl font-semibold">Hobbies & Interests</div>
+        <div className="mb-8 w-full rounded-2xl bg-white/5 p-4">
+          <div className="text-2xl font-semibold">Hobbies & Interests</div>
           <div className="flex w-full rounded-2xl bg-white/5 p-4">
             <ul className="list-disc pl-4">
               <li>Art</li>
