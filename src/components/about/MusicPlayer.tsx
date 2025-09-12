@@ -187,7 +187,7 @@ const MusicPlayer = () => {
         target.tagName === "TEXTAREA" ||
         target.isContentEditable
       ) {
-        return; // ignore when typing
+        return;
       }
 
       switch (e.code) {
@@ -251,7 +251,7 @@ const MusicPlayer = () => {
 
   return (
     <div className="h-full w-full">
-      <div className="flex h-full flex-col items-center justify-center space-y-7 text-white md:px-16">
+      <div className="flex h-full flex-col items-center justify-center space-y-7 text-white">
         <div className="flex h-auto w-full max-w-4xl flex-col space-y-4 rounded-xl border border-white/40 bg-white/20 p-4 md:flex-row md:space-y-0 md:space-x-4">
           <div className="relative aspect-square shrink-0 overflow-hidden rounded-xl bg-white md:h-42 md:w-42">
             {current.cover ? (

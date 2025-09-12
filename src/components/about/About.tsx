@@ -36,16 +36,13 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative flex w-full flex-col items-center justify-center gap-8 px-[2vw] py-4 pt-20 md:flex-row md:px-[9vw] md:pt-0"
+      className="relative flex w-full flex-col items-center justify-center gap-8 px-[2vw] py-4 pt-20 md:flex-row md:pt-0"
     >
       <div className="block md:hidden">
         <HorizontalTitle title="ABOUT ME" />
       </div>
       <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
-
-      {/* Removed backdrop-blur here */}
       <MusicPlayer />
-
       <div className="hidden md:block">
         <VerticalTitle title="ABOUT ME" />
       </div>
