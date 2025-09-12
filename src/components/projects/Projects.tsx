@@ -99,6 +99,7 @@ const Projects = () => {
                   width={500}
                   height={300}
                   className="w-full max-w-xs object-contain sm:max-w-md"
+                  priority
                 />
               </div>
             </motion.div>

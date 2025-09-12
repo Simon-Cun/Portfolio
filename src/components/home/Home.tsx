@@ -26,6 +26,7 @@ const Home = () => {
             src={Me}
             alt="Photo of Me"
             className="max-w-xs rounded-2xl object-contain md:max-w-sm"
+            priority
           />
         </div>
 
