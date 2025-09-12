@@ -42,7 +42,8 @@ const About = () => {
       </div>
       <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
 
-      <div className="flex w-full flex-col items-center gap-4 rounded-2xl shadow-lg backdrop-blur-md backdrop-filter">
+      {/* Removed backdrop-blur here */}
+      <div className="flex w-full flex-col items-center gap-4 rounded-2xl shadow-lg">
         <div className="w-full rounded-2xl bg-white/5 p-4">
           <div className="pb-2 text-2xl font-semibold">Who Am I?</div>
           <div className="w-full rounded-2xl bg-white/5 p-4">
