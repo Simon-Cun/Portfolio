@@ -44,14 +44,13 @@ const About = () => {
       <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
 
       {/* Removed backdrop-blur here */}
-      <MusicPlayer/>
-      
+      <MusicPlayer />
 
       <div className="hidden md:block">
         <VerticalTitle title="ABOUT ME" />
       </div>
       <div className="flex w-full flex-col items-center justify-center rounded-2xl pb-4 md:h-[800px]">
-        <div className="w-full rounded-2xl bg-white/5 p-4 mb-4">
+        <div className="mb-4 w-full rounded-2xl bg-white/5 p-4">
           <div className="pb-2 text-2xl font-semibold">Hobbies & Interests</div>
           <div className="flex w-full rounded-2xl bg-white/5 p-4">
             <ul className="list-disc pl-4">
@@ -62,7 +61,7 @@ const About = () => {
             </ul>
           </div>
         </div>
-        <div className="flex w-full flex-col items-center gap-2 rounded-2xl p-4 bg-white/5">
+        <div className="flex w-full flex-col items-center gap-2 rounded-2xl bg-white/5 p-4">
           <div className="text-2xl font-semibold">Contact Me</div>
 
           <div className="w-full rounded-xl bg-white/5 p-4 text-white">
