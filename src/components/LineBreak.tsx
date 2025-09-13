@@ -1,58 +1,51 @@
 "use client";
+
 import {
-  FaReact,
-  FaNode,
-  FaJs,
-  FaJava,
-  FaPython,
-  FaHtml5,
-} from "react-icons/fa";
-import { TbBrandFramerMotion } from "react-icons/tb";
-import { SiTypescript, SiTailwindcss, SiNextdotjs } from "react-icons/si";
-import { useEffect, useState } from "react";
+  SiReact,
+  SiNodedotjs,
+  SiTypescript,
+  SiJavascript,
+  SiNextdotjs,
+  SiPython,
+  SiTailwindcss,
+  SiHtml5,
+  SiGit,
+  SiPostgresql,
+  SiExpo,
+  SiCplusplus,
+  SiFramer,
+  SiVercel,
+} from "react-icons/si";
 
 const techIcons = [
-  { icon: <FaReact />, name: "React" },
-  { icon: <FaNode />, name: "Node.js" },
-  { icon: <FaJs />, name: "JavaScript" },
+  { icon: <SiPython />, name: "Python" },
+  { icon: <SiCplusplus />, name: "C++" },
+  { icon: <SiGit />, name: "Git" },
+  { icon: <SiReact />, name: "React" },
+  { icon: <SiNodedotjs />, name: "Node.js" },
   { icon: <SiNextdotjs />, name: "Next.js" },
+  { icon: <SiJavascript />, name: "JavaScript" },
   { icon: <SiTypescript />, name: "TypeScript" },
-  { icon: <FaJava />, name: "Java" },
-  { icon: <FaPython />, name: "Python" },
   { icon: <SiTailwindcss />, name: "Tailwind" },
-  { icon: <FaHtml5 />, name: "HTML5" },
-  { icon: <TbBrandFramerMotion />, name: "Framer Motion" },
+  { icon: <SiFramer />, name: "Framer Motion" },
+  { icon: <SiHtml5 />, name: "HTML5" },
+  { icon: <SiPostgresql />, name: "PostgreSQL" },
+  { icon: <SiExpo />, name: "Expo" },
+  { icon: <SiVercel />, name: "Vercel" },
 ];
 
-const techIconsArray = Array(2).fill(techIcons).flat();
-
-const getVisibleCount = (width: number) => {
-  if (width < 1600) return 15; // tablets
-  return techIconsArray.length; // desktop
-};
-
 const TechIcons = () => {
-  const [visibleCount, setVisibleCount] = useState(() =>
-    getVisibleCount(typeof window !== "undefined" ? window.innerWidth : 1024),
-  );
-
-  useEffect(() => {
-    const handleResize = () => {
-      setVisibleCount(getVisibleCount(window.innerWidth));
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <div className="flex flex-wrap justify-center gap-4 text-[3.3vw] text-white">
-      {techIconsArray.slice(0, visibleCount).map(({ icon, name }, idx) => (
+      {techIcons.map(({ icon, name }, idx) => (
         <div
           key={idx}
-          title={name}
-          className="transition-transform hover:scale-115 hover:drop-shadow-[0_0_50px_white]"
+          className="group relative flex flex-col items-center transition-transform hover:scale-110 hover:drop-shadow-[0_0_50px_white]"
         >
           {icon}
+          <span className="absolute bottom-full z-10 mb-2 hidden rounded bg-black px-2 py-1 text-sm whitespace-nowrap text-white group-hover:block">
+            {name}
+          </span>
         </div>
       ))}
     </div>
