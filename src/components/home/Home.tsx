@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Title from "@/components/VerticalTitle";
-import Me from "@/public/image.png";
+import Me from "@/public/portfolio.jpg";
 import {
   FaGithub,
   FaLinkedin,
@@ -11,7 +11,6 @@ import {
 } from "react-icons/fa";
 import { motion, Variants } from "motion/react";
 
-// Variants with type
 const SlideInFromLeft: Variants = {
   initial: { opacity: 0, x: -10 },
   animate: (custom: number) => ({
@@ -38,9 +37,7 @@ const Home = () => {
       className="relative flex w-full flex-col items-center justify-center pb-20 md:h-screen md:flex-row md:pb-0"
     >
       <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
-
       <div className="flex w-full max-w-5xl flex-col items-center justify-center gap-10 px-4 md:flex-row">
-        {/* Profile Image */}
         <div className="rounded-2xl bg-gradient-to-r from-white via-transparent to-black p-[2px]">
           <Image
             src={Me}
@@ -50,7 +47,6 @@ const Home = () => {
           />
         </div>
 
-        {/* Text & Socials */}
         <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
           <motion.div
             variants={SlideInFromLeft}
@@ -74,34 +70,32 @@ const Home = () => {
             Hello, my name is Simon and I am a current student at the University
             of California, Riverside studying Computer Science.
           </motion.div>
-
-          {/* Social Links with Framer Motion hover color + scale */}
           <div className="flex flex-wrap justify-center gap-2 md:justify-start">
             {[
               {
                 href: "https://github.com/Simon-Cun",
                 icon: <FaGithub size={28} />,
-                color: "#6600ad", // GitHub purple-ish
+                color: "#6600ad",
               },
               {
                 href: "https://www.linkedin.com/in/Simon-Cun",
                 icon: <FaLinkedin size={28} />,
-                color: "#0A66C2", // LinkedIn blue
+                color: "#0A66C2",
               },
               {
                 href: "https://www.instagram.com/simonc2992/",
                 icon: <FaInstagram size={28} />,
-                color: "#E1306C", // Instagram pink
+                color: "#E1306C",
               },
               {
                 href: "mailto:simoncun2586@gmail.com",
                 icon: <FaEnvelope size={28} />,
-                color: "#D44638", // Email red
+                color: "#D44638",
               },
               {
                 href: "/Simon_Cun_Resume.pdf",
                 icon: <FaFile size={28} />,
-                color: "#A9A9A9", // Resume gray
+                color: "#A9A9A9",
               },
             ].map(({ href, icon, color }, index) => (
               <motion.a
