@@ -9,8 +9,6 @@ export const ExperienceData = [
     location: "Riverside, California",
     date: "September 2025 – Present",
     information: [
-      "Facilitated student learning of data structure & program design concepts by guiding students through coding assignments, labs, and debugging strategies",
-      "Supported classes of 100+ students in C++ and software construction by hosting office hours and assisting in lab sessions",
     ],
     bgColor: "bg-purple-200/30",
   },
