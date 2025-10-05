@@ -37,19 +37,14 @@ const HorizontalTitle = ({ title }: { title: string }) => {
       whileInView="show"
       viewport={{ once: true, amount: 0.3 }}
     >
-      {/* Animated top border (left-to-right) */}
       <motion.div
         className="absolute top-0 left-0 h-[2px] w-full origin-left bg-gradient-to-r from-transparent via-white to-transparent"
         variants={borderVariants}
       />
-
-      {/* Animated bottom border (left-to-right) */}
       <motion.div
         className="absolute bottom-0 left-0 h-[2px] w-full origin-left bg-gradient-to-r from-transparent via-white to-transparent"
         variants={borderVariants}
       />
-
-      {/* Animated text */}
       <div className="bg-gradient-to-r from-white to-sky-300 bg-clip-text px-4 text-5xl text-transparent drop-shadow-[0_0_2px_white] md:text-7xl">
         {title.split("").map((char, index) => (
           <motion.span
