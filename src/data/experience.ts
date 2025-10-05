@@ -1,6 +1,6 @@
 import Bearylicious from "@/public/experience/bearylicious.png";
 import ACM from "@/public/experience/acm@ucr.webp";
-import ULA from "@/public/experience/ula.png"
+import ULA from "@/public/experience/ula.png";
 export const ExperienceData = [
   {
     logo: ULA,
