@@ -8,8 +8,7 @@ export const ExperienceData = [
     role: "Tutor",
     location: "Riverside, California",
     date: "September 2025 – Present",
-    information: [
-    ],
+    information: [],
     bgColor: "bg-purple-200/30",
   },
   {
