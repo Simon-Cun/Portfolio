@@ -16,21 +16,11 @@ export default [
       "*.config.*js",
     ],
   },
-
-  // Apply to JavaScript/TypeScript source files
   { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
-
-  // CommonJS settings for plain .js files
   { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
-
-  // Global variables (Node.js)
   { languageOptions: { globals: { ...globals.node } } },
-
-  // Recommended ESLint and TypeScript configs
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
-
-  // Plugins
   {
     plugins: {
       react,
@@ -39,8 +29,6 @@ export default [
       "@tanstack/query": query,
     },
   },
-
-  // Rules
   {
     rules: {
       "react/react-in-jsx-scope": "off",
