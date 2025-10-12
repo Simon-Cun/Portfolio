@@ -1,12 +1,6 @@
 export default [
   {
-    ignores: [
-      "dist/*",
-      ".next/",
-      "out/",
-      "node_modules/",
-      "next-env.d.ts",
-    ],
+    ignores: ["dist/*", ".next/", "out/", "node_modules/", "next-env.d.ts"],
   },
   { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
   { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
