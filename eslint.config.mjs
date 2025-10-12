@@ -1,8 +1,13 @@
+import globals from "globals";
+import eslint from "@eslint/js";
+import tseslint from "typescript-eslint";
+import react from "eslint-plugin-react";
+import prettier from "eslint-plugin-prettier/recommended";
+import query from "@tanstack/eslint-plugin-query";
 export default [
-  {
-    ignores: ["dist/*", ".next/", "out/", "node_modules/", "next-env.d.ts"],
-  },
+  { ignores: ["dist/*"] },
   { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
+  { ignores: [".next/", "out/", "node_modules"] },
   { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
   { languageOptions: { globals: { ...globals.node } } },
   eslint.configs.recommended,
@@ -24,7 +29,5 @@ export default [
       ],
     },
   },
-  {
-    ignores: ["*.config.*js"],
-  },
+  { ignores: ["*.config.*js"] },
 ];
