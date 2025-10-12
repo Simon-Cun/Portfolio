@@ -23,7 +23,7 @@ export const ExperienceData = [
   },
   {
     logo: ACM,
-    title: "ACM Forge @ UCR - Skyflow",
+    title: "ACM @ UCR Forge - Skyflow",
     role: "Software Engineer / Mechanical Engineer",
     location: "Riverside, California",
     date: "February 2025 – Present",
