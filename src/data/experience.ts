@@ -5,43 +5,25 @@ export const ExperienceData = [
   {
     logo: ACM,
     title: "ACM @ UCR",
-    role: "Vice President of Internal Affairs",
+    role: "Software Engineer, Web Developer, & VP of Internal Affairs ",
     location: "Riverside, California",
     date: "October 2025 – Present",
-    information: [],
+    information: [
+      "Developed and refactored ACM projects, enhancing code efficiency and system performance by 30%, while contributing to both frontend and backend systems for student-led software development.",
+      "Transformed 5+ Figma wireframes into responsive websites, implementing UI components and aligning visual design goals through weekly collaboration meetings.",
+      "Managed internal documentation and scheduling for ACM Internal Affairs, streamlining event coordination by 40% and resource tracking, overall increasing community engagement by 60%.",
+      "Organized and supported 10+ events per quarter, ensuring smooth communication within organization, and officers.",
+    ],
   },
   {
     logo: ULA,
     title: "Undergraduate Learning Assistant (ULA)",
-    role: "Tutor",
+    role: "Tutor - Professor Neftali Watkinson ",
     location: "Riverside, California",
     date: "October 2025 – Present",
     information: [
-      "Supported student learning of assembly language programming, computer architecture, and machine-level data representation.",
-      "Assisted students during lab sessions with LC-3 assembly debugging, instruction execution, and memory organization concepts.",
-    ],
-  },
-  {
-    logo: ACM,
-    title: "ACM @ UCR Forge - Skyflow",
-    role: "Software Engineer / Mechanical Engineer",
-    location: "Riverside, California",
-    date: "February 2025 – Present",
-    information: [
-      "Designed and 3D printed a functional drone chassis using SolidWorks.",
-      "Calibrated IMU sensor data and fixed flight control bugs in Python for improved navigation.",
-    ],
-  },
-  {
-    logo: ACM,
-    title: "ACM @ UCR Spark",
-    role: "Web Developer / Designer",
-    location: "Riverside, California",
-    date: "December 2024 – Present",
-    information: [
-      "Translated Figma designs into fully responsive website using React and Tailwind CSS.",
-      "Collaborated with team members to align on UI goals and resolve frontend challenges.",
-      "Participated in weekly meetings to review progress and share updates.",
+      "Supported classes of 100+ students in assembly language programming, computer architecture, and machine-level data representation through one-on-one and group tutoring sessions.",
+      "Assisted students during weekly lab sessions with LC-3 assembly debugging, instruction execution, and memory organization concepts to reinforce course understanding.",
     ],
   },
   {
