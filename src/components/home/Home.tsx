@@ -6,7 +6,6 @@ import {
   FaGithub,
   FaLinkedin,
   FaFile,
-  FaInstagram,
   FaEnvelope,
 } from "react-icons/fa";
 import { motion, Variants } from "motion/react";
@@ -81,11 +80,6 @@ const Home = () => {
                 href: "https://www.linkedin.com/in/Simon-Cun",
                 icon: <FaLinkedin size={28} />,
                 color: "#0A66C2",
-              },
-              {
-                href: "https://www.instagram.com/simonc2992/",
-                icon: <FaInstagram size={28} />,
-                color: "#E1306C",
               },
               {
                 href: "mailto:simoncun2586@gmail.com",

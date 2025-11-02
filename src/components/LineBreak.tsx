@@ -11,27 +11,25 @@ import {
   SiHtml5,
   SiGit,
   SiPostgresql,
-  SiExpo,
   SiCplusplus,
-  SiFramer,
-  SiVercel,
+  SiGithub,
+  SiMysql,
 } from "react-icons/si";
 
 const techIcons = [
   { icon: <SiPython />, name: "Python" },
   { icon: <SiCplusplus />, name: "C++" },
   { icon: <SiGit />, name: "Git" },
+  { icon: <SiGithub />, name: "Github" },
   { icon: <SiReact />, name: "React" },
   { icon: <SiNodedotjs />, name: "Node.js" },
   { icon: <SiNextdotjs />, name: "Next.js" },
   { icon: <SiJavascript />, name: "JavaScript" },
   { icon: <SiTypescript />, name: "TypeScript" },
   { icon: <SiTailwindcss />, name: "Tailwind" },
-  { icon: <SiFramer />, name: "Framer Motion" },
   { icon: <SiHtml5 />, name: "HTML5" },
   { icon: <SiPostgresql />, name: "PostgreSQL" },
-  { icon: <SiExpo />, name: "Expo" },
-  { icon: <SiVercel />, name: "Vercel" },
+  { icon: <SiMysql />, name: "MySQL" },
 ];
 
 const TechIcons = () => {
