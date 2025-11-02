@@ -2,12 +2,7 @@
 import Image from "next/image";
 import Title from "@/components/VerticalTitle";
 import Me from "@/public/portfolio.jpg";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaFile,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFile, FaEnvelope } from "react-icons/fa";
 import { motion, Variants } from "motion/react";
 
 const SlideInFromLeft: Variants = {
