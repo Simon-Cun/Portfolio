@@ -69,7 +69,7 @@ const Home = () => {
               {
                 href: "https://github.com/Simon-Cun",
                 icon: <FaGithub size={28} />,
-                color: "#6600ad",
+                color: "#9528e0",
               },
               {
                 href: "https://www.linkedin.com/in/Simon-Cun",
