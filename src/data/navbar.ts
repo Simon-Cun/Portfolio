@@ -4,10 +4,6 @@ export const tags = [
     link: "#home",
   },
   {
-    name: "ABOUT",
-    link: "#about",
-  },
-  {
     name: "PROJECTS",
     link: "#projects",
   },
