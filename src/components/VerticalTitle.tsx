@@ -4,7 +4,7 @@ import { motion, Variants } from "motion/react";
 const VerticalTitle = ({ title }: { title: string }) => {
   const words = title.split(" ");
 
-  const charVariants: Variants = {
+  const wordVariants: Variants = {
     hidden: { opacity: 0, y: -50 },
     show: {
       opacity: 1,
@@ -26,7 +26,7 @@ const VerticalTitle = ({ title }: { title: string }) => {
     hidden: {},
     show: {
       transition: {
-        staggerChildren: 0.13,
+        staggerChildren: 0.3,
       },
     },
   };
@@ -40,32 +40,29 @@ const VerticalTitle = ({ title }: { title: string }) => {
       viewport={{ once: true, amount: 0.3 }}
     >
       {words.map((word, wordIndex) => (
-        <div
+        <motion.div
           key={wordIndex}
           className={`relative p-4 drop-shadow-[0_0_2px_white] ${
             wordIndex === 2 ? "translate-y-10 md:translate-y-20" : ""
           }`}
+          variants={wordVariants}
         >
           <motion.div
-            className="pointer-events-none absolute inset-y-0 left-0 w-[2px] origin-top bg-gradient-to-b from-transparent via-white to-transparent"
+            className="pointer-events-none absolute inset-y-0 left-0 w-0.5 origin-top bg-linear-to-b from-transparent via-white to-transparent"
             variants={borderVariants}
           />
           <motion.div
-            className="pointer-events-none absolute inset-y-0 right-0 w-[2px] origin-top bg-gradient-to-b from-transparent via-white to-transparent"
+            className="pointer-events-none absolute inset-y-0 right-0 w-0.5 origin-top bg-linear-to-b from-transparent via-white to-transparent"
             variants={borderVariants}
           />
-          <div className="bg-gradient-to-b from-white via-sky-300 to-white bg-clip-text text-transparent">
+          <div className="bg-linear-to-b from-white via-sky-300 to-white bg-clip-text text-transparent">
             {word.split("").map((char, charIndex) => (
-              <motion.span
-                key={charIndex}
-                className="block"
-                variants={charVariants}
-              >
+              <span key={charIndex} className="block">
                 {char}
-              </motion.span>
+              </span>
             ))}
           </div>
-        </div>
+        </motion.div>
       ))}
     </motion.div>
   );
