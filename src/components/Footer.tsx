@@ -1,3 +1,4 @@
+"use client";
 const Footer = () => {
   return (
     <footer className="w-full py-12 text-center">
