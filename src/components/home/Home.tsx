@@ -30,9 +30,9 @@ const Home = () => {
       id="home"
       className="relative flex w-full flex-col items-center justify-center pb-20 md:h-screen md:flex-row md:pb-0"
     >
-      <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
+      <div className="absolute bottom-0 left-0 h-px w-full bg-linear-to-r from-transparent via-white to-transparent" />
       <div className="flex w-full max-w-5xl flex-col items-center justify-center gap-10 px-4 md:flex-row">
-        <div className="rounded-2xl bg-gradient-to-r from-white via-transparent to-black p-[2px]">
+        <div className="rounded-2xl bg-linear-to-r from-white via-transparent to-black p-0.5">
           <Image
             src={Me}
             alt="Photo of Me"
@@ -107,9 +107,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      {/* Vertical Title (No animation) */}
-      <div className="order-first my-10 flex w-1/4 justify-center md:order-none md:my-0">
+      <div className="order-first my-10 flex w-1/4 justify-center md:order-0 md:my-0">
         <Title title="SIMON SAU CUN" />
       </div>
     </section>
