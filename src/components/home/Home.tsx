@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Title from "@/components/VerticalTitle";
-import Me from "@/public/portfolio.jpg";
+import Me from "@/public/profile.png";
 import { FaGithub, FaLinkedin, FaFile, FaEnvelope } from "react-icons/fa";
 import { motion, Variants } from "motion/react";
 
