@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="relative flex items-center justify-center">
         <ScrollLink
           to="#home"
-          className="absolute left-4 cursor-pointer font-semibold text-sky-200 hover:text-sky-100"
+          className="absolute left-4 cursor-pointer font-semibold text-zinc-100 hover:text-zinc-100"
         >
           SIMON CUN
         </ScrollLink>
@@ -22,12 +22,12 @@ const Navbar = () => {
             >
               <ScrollLink
                 to={link.replace("#", "")}
-                className="cursor-pointer hover:text-sky-100"
+                className="cursor-pointer hover:text-zinc-100"
               >
                 {name}
               </ScrollLink>
               <motion.span
-                className="absolute right-0 bottom-0 left-0 h-0.5 bg-sky-100"
+                className="absolute right-0 bottom-0 left-0 h-0.5 bg-zinc-100"
                 style={{ originX: 0.5 }}
                 variants={{
                   rest: { scaleX: 0 },
