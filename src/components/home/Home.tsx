@@ -48,7 +48,7 @@ const Home = () => {
             initial="initial"
             whileInView="animate"
             custom={0}
-            className="text-4xl font-extrabold"
+            className="text-4xl font-semibold"
           >
             Software Engineer
           </motion.div>
@@ -59,7 +59,6 @@ const Home = () => {
             initial="initial"
             whileInView="animate"
             custom={0.25}
-            className="font-bold"
           >
             Hello, my name is Simon and I am a current student at the University
             of California, Riverside studying Computer Science.

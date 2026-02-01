@@ -44,7 +44,7 @@ const Projects = () => {
               }}
             >
               <div className="flex w-full flex-col gap-4 md:w-2/3">
-                <h2 className="text-center text-3xl font-extrabold sm:text-4xl md:text-left">
+                <h2 className="text-center text-3xl font-semibold sm:text-4xl md:text-left">
                   {project.title}
                 </h2>
 
@@ -54,11 +54,11 @@ const Projects = () => {
                   <span>{project.status}</span>
                 </div>
 
-                <p className="text-center font-bold md:text-left">
+                <p className="text-center md:text-left">
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap justify-center gap-2 font-semibold md:justify-start">
+                <div className="flex flex-wrap justify-center gap-2 md:justify-start">
                   {project.TechStack.map((tech, i) => (
                     <span
                       key={i}
@@ -69,7 +69,7 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <ul className="list-disc pl-6 text-center font-semibold md:text-left">
+                <ul className="list-disc pl-6 text-center md:text-left">
                   {project.features.map((feature, i) => (
                     <li key={i}>{feature}</li>
                   ))}

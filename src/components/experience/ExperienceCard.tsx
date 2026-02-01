@@ -24,7 +24,7 @@ const ExperienceCard = ({
         <div className="flex items-center gap-4">
           <Image src={logo} alt={title} width={100} height={100} />
           <div className="flex flex-col">
-            <div className="text-2xl font-extrabold text-white">{title}</div>
+            <div className="text-2xl font-semibold text-white">{title}</div>
             <div className="text-lg text-gray-300">{role}</div>
           </div>
         </div>
@@ -33,7 +33,7 @@ const ExperienceCard = ({
           <div className="text-lg">{date}</div>
         </div>
       </div>
-      <ul className="mt-4 list-disc space-y-2 pl-5 text-xl font-semibold text-white">
+      <ul className="mt-4 list-disc space-y-2 pl-5 text-xl text-white">
         {information.map((point, index) => (
           <li key={index}>{point}</li>
         ))}

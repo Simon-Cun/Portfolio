@@ -42,7 +42,7 @@ const VerticalTitle = ({ title }: { title: string }) => {
       {words.map((word, wordIndex) => (
         <motion.div
           key={wordIndex}
-          className={`relative p-4 drop-shadow-[0_0_2px_white] ${
+          className={`relative p-4 drop-shadow-[0_0_1.5px_white] ${
             wordIndex === 2 ? "translate-y-10 md:translate-y-20" : ""
           }`}
           variants={wordVariants}
@@ -55,7 +55,7 @@ const VerticalTitle = ({ title }: { title: string }) => {
             className="pointer-events-none absolute inset-y-0 right-0 w-0.5 origin-top bg-linear-to-b from-transparent via-white to-transparent"
             variants={borderVariants}
           />
-          <div className="bg-linear-to-b from-white via-sky-300 to-white bg-clip-text text-transparent">
+          <div className="bg-linear-to-b from-white via-zinc-200 to-white bg-clip-text text-transparent">
             {word.split("").map((char, charIndex) => (
               <span key={charIndex} className="block">
                 {char}

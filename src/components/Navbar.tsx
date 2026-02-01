@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="relative flex items-center justify-center">
         <ScrollLink
           to="#home"
-          className="absolute left-4 cursor-pointer font-bold text-sky-200 hover:text-sky-100"
+          className="absolute left-4 cursor-pointer font-semibold text-sky-200 hover:text-sky-100"
         >
           SIMON CUN
         </ScrollLink>
