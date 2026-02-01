@@ -5,7 +5,7 @@ export const ExperienceData = [
   {
     logo: ACM,
     title: "ACM @ UCR",
-    role: "Software Engineer, Web Developer, & VP of Internal Affairs ",
+    role: "Software Engineer / VP of Internal Affairs ",
     location: "Riverside, California",
     date: "October 2025 – Present",
     information: [
