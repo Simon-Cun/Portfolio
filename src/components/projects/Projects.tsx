@@ -5,22 +5,22 @@ import HorizontalTitle from "@/components/HorizontalTitle";
 import Link from "next/link";
 import Image from "next/image";
 import LineBreak from "@/components/LineBreak";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
 import { ProjectData } from "@/data/projects";
 
 const Projects = () => {
-  const overlap = 10; // how much each card stacks
+  const overlap = 10;
 
   return (
     <section id="projects" className="relative w-full py-20 md:flex md:pl-10">
-      <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
+      <div className="absolute bottom-0 left-0 h-px w-full bg-linear-to-r from-transparent via-white to-transparent" />
 
-      <div className="hidden md:sticky md:top-[50px] md:block">
+      <div className="top-12.5 hidden md:sticky md:block">
         <VerticalTitle title="PROJECTS" />
       </div>
 
       <div className="mb-6 flex justify-center md:hidden">
-        <div className="sticky top-[20px] flex w-full justify-center">
+        <div className="sticky top-5 flex w-full justify-center">
           <HorizontalTitle title="PROJECTS" />
         </div>
       </div>
@@ -31,14 +31,14 @@ const Projects = () => {
         </div>
 
         {ProjectData.map((project, index) => {
-          const zIndex = index + 1; // now first in array is bottom card
+          const zIndex = index + 1;
 
           return (
             <motion.div
               key={index}
               className={`flex flex-col gap-6 rounded-2xl border border-white/20 p-5 shadow-lg backdrop-blur-md backdrop-filter md:flex-row md:p-10 ${project.color} md:sticky`}
               style={{
-                top: `${index * overlap}px`, // stack downward
+                top: `${index * overlap}px`,
                 zIndex,
                 marginTop: index === 0 ? 0 : `-${overlap}px`,
               }}
@@ -76,8 +76,12 @@ const Projects = () => {
                 </ul>
 
                 <div className="flex justify-center gap-6 md:justify-start">
-                  <Link href={project.Links.github} target="_blank">
-                    <FaGithub size={40} />
+                  <Link
+                    href={project.Links.github}
+                    target="_blank"
+                    className="flex items-center gap-2 text-xl"
+                  >
+                    <FaGithub size={20} /> Github
                   </Link>
                   {project.Links.demo && project.Links.demo !== "#" && (
                     <Link
@@ -85,8 +89,9 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Demo Site"
+                      className="flex items-center gap-2 text-xl"
                     >
-                      <FaExternalLinkAlt size={30} />
+                      <FaLink size={20} /> Demo
                     </Link>
                   )}
                 </div>

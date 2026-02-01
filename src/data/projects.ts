@@ -5,7 +5,7 @@ import WUSHU from "@/public/projects/wushu.png";
 import Skyflow from "@/public/projects/skyflow.jpg";
 import ULA from "@/public/projects/ula.png";
 import SpaceCalculator from "@/public/projects/spacecalculator.png";
-import CutieMood from "@/public/projects/cutiemood.png"; // <- add a screenshot at public/projects/cutiemood.png
+import CutieMood from "@/public/projects/cutiemood.png";
 import { StaticImageData } from "next/image";
 
 export type Project = {
@@ -60,7 +60,7 @@ export const ProjectData: Project[] = [
 
   {
     title: "Undergraduate Learning Assistant Website",
-    date: "Jun 2025 – Present",
+    date: "Jun 2025 – September 2025",
     status: "Ongoing",
     color: "bg-indigo-200/20",
     image: { src: ULA, alt: "Undergraduate Learning Assistant Landing Page" },
