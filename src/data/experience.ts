@@ -30,7 +30,7 @@ export const ExperienceData = [
     logo: Bearylicious,
     title: "Bearylicious",
     role: "Barista / Cashier",
-    location: "Riverside, California",
+    location: "Upland, California",
     date: "September 2023 – February 2024",
     information: [
       "Provided excellent customer service in a high-volume boba tea shop.",
