@@ -40,7 +40,6 @@ export default function RootLayout({ children }: LayoutProps) {
       />
     );
   });
-
   return (
     <html lang="en" className={`${dm_sans.variable} ${playfair.variable}`}>
       <body className="font-dm_sans relative overflow-x-hidden bg-black text-lg text-white">

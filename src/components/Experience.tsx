@@ -1,5 +1,5 @@
 import HorizontalTitle from "@/components/HorizontalTitle";
-import ExperienceCard from "@/components/experience/ExperienceCard";
+import ExperienceCard from "@/components/ExperienceCard";
 import { ExperienceData } from "@/data/experience";
 
 const Experience = () => {

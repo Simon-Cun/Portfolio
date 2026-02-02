@@ -1,6 +1,6 @@
-import Home from "@/components/home/Home";
-import Projects from "@/components/projects/Projects";
-import Experience from "@/components/experience/Experience";
+import Home from "@/components/Home";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 
 const Page = () => {
