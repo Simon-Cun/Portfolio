@@ -28,7 +28,7 @@ export const ProjectData: Project[] = [
     color: "bg-orange-200/20",
     image: { src: CutieMood, alt: "Cutie Mood app calendar and chat screens" },
     description:
-      "Cross-platform mood tracking and journaling app with a calendar UI, Supabase sync, and a chatbot powered by Gemini.",
+      "A mobile Mood tracking and journaling app to help with mental health.",
     TechStack: [
       "React Native",
       "Expo",
@@ -49,7 +49,7 @@ export const ProjectData: Project[] = [
     color: "bg-indigo-200/20",
     image: { src: ULA, alt: "Undergraduate Learning Assistant Landing Page" },
     description:
-      "UCR CSE’s Undergraduate Learning Assistants site to support students and showcase program resources.",
+      "The Undergraduate Learning Assistants site to support students and showcase program resources.",
     TechStack: [
       "React",
       "Next.js",
@@ -67,7 +67,7 @@ export const ProjectData: Project[] = [
     color: "bg-purple-200/20",
     image: { src: Skyflow, alt: "Drone Project Image" },
     description:
-      "Designed and built a fully autonomous drone. Programmed flight control in Python, integrated sensors and cameras, and led hardware–software integration using SolidWorks and IMU calibration.",
+      "A fully autonomous drone designed and built to navigate through traffic cones.",
     TechStack: ["Python", "SolidWorks", "Git", "Raspberry Pi"],
     Links: {
       github: "https://github.com/acm-ucr/drones-skyflow",
@@ -79,8 +79,7 @@ export const ProjectData: Project[] = [
     title: "WUSHU Website",
     color: "bg-pink-200/20",
     image: { src: WUSHU, alt: "Wushu Landing Page" },
-    description:
-      "Official website for the UCR Wushu Club. Interactive components with React and TypeScript, styled with Tailwind CSS, and animations with Framer Motion.",
+    description: "Club website for the WUSHU club.",
     TechStack: [
       "React",
       "Next.js",
@@ -100,7 +99,7 @@ export const ProjectData: Project[] = [
     color: "bg-rose-200/20",
     image: { src: TwiceIsNice, alt: "RoseHack Website Landing Page" },
     description:
-      "Sustainability-themed web app built during RoseHack 2025. Highlighted upcycling education with interactive UI and won the beginner track award.",
+      "Sustainability-themed web app built during RoseHack 2025. Highlighted upcycling education with interactive UI winning the beginner track award.",
     TechStack: ["HTML", "CSS", "JavaScript"],
     Links: {
       github: "https://github.com/Simon-Cun",
@@ -112,8 +111,7 @@ export const ProjectData: Project[] = [
     title: "Chinese Student Association Website",
     color: "bg-fuchsia-200/20",
     image: { src: CSA, alt: "CSA Landing Page" },
-    description:
-      "Modern club website for the Chinese Student Association at UCR. Collaborated on weekly sprints, implemented dynamic sections, and contributed to frontend development.",
+    description: "Club website for the Chinese Student Association.",
     TechStack: [
       "React",
       "Next.js",

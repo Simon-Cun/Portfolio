@@ -33,7 +33,7 @@ export const ExperienceData = [
   },
   {
     logo: ACM,
-    title: "Association for Computer Machinery",
+    title: "Association for Computer Machinery - Board",
     role: "Vice President of Internal Affairs",
     location: "Riverside, California",
     date: "September 2025 – May 2026",
@@ -42,14 +42,22 @@ export const ExperienceData = [
   },
   {
     logo: ACM,
-    title: "Association for Computer Machinery",
+    title: "Association for Computer Machinery - Spark",
     role: "Web Developer",
     location: "Riverside, California",
     date: "December 2024 – September 2025",
     information:
       "Collaborated in a team to develop club websites, meeting weekly to deliver components and features.",
   },
-
+  {
+    logo: ACM,
+    title: "Association for Computer Machinery - Forge",
+    role: "CAD Engineer",
+    location: "Riverside, California",
+    date: "March 2025 – May 2025",
+    information:
+      "Created a stable 3d printed drone chasis using SolidWorks, collaborating with engineers of different diciplines to deliver an autonomous drone.",
+  },
   {
     logo: Bearylicious,
     title: "Bearylicious",
