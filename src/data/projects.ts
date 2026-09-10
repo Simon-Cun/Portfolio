@@ -137,9 +137,6 @@ export const ProjectData: Project[] = [
       github: "https://github.com/aschu042/cutieHack",
       demo: "https://evabao007.github.io/",
     },
-    role: "Backend Developer",
-    date: "Nov 2024",
-    status: "Complete",
     color: "bg-gray-700/20",
     image: {
       src: SpaceCalculator,
