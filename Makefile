@@ -8,6 +8,7 @@ format:
 	npm run format
 
 push:
+	npm run format
 	git add .
 	git commit -m "Updating Information"
 	git push

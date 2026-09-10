@@ -102,7 +102,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="order-first my-10 flex w-1/4 justify-center md:order-0 md:my-0">
+      <div className="order-first my-10 flex w-1/4 justify-center px-40 md:order-0 md:my-0">
         <Title title="SIMON SAU CUN" />
       </div>
     </section>
