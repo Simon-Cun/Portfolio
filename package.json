@@ -15,11 +15,11 @@
     "@emailjs/browser": "^4.4.1",
     "@tanstack/react-query": "5.90.12",
     "lucide-react": "0.562.0",
-    "motion": "^12.23.26",
-    "next": "^16.1.0",
+    "motion": "^12.43.0",
+    "next": "^16.3.4",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "react-icons": "^5.5.0",
+    "react-icons": "^5.7.0",
     "react-scroll": "^1.9.3"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
     "@types/react-scroll": "^1.8.10",
     "@typescript-eslint/eslint-plugin": "8.50.0",
     "@typescript-eslint/parser": "8.50.0",
-    "eslint": "^9.39.2",
+    "eslint": "^9.39.5",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.4",
     "eslint-plugin-react": "7.37.5",

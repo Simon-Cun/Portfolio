@@ -32,11 +32,11 @@ const Home = () => {
     >
       <div className="absolute bottom-0 left-0 h-px w-full bg-linear-to-r from-transparent via-white to-transparent" />
       <div className="flex w-full max-w-5xl flex-col items-center justify-center gap-10 px-4 md:flex-row">
-        <div className="rounded-2xl bg-linear-to-r from-white via-transparent to-black p-0.5">
+        <div className="bg-linear-to-r from-white via-transparent to-black p-0.5">
           <Image
             src={Me}
             alt="Photo of Me"
-            className="max-w-xs rounded-2xl object-contain md:max-w-sm"
+            className="max-w-xs object-contain md:max-w-sm"
             priority
           />
         </div>
@@ -48,9 +48,9 @@ const Home = () => {
             initial="initial"
             whileInView="animate"
             custom={0}
-            className="text-4xl font-semibold"
+            className="text-2xl font-semibold"
           >
-            Software Engineer
+            Student, Software Engineer
           </motion.div>
 
           <motion.div
@@ -68,24 +68,20 @@ const Home = () => {
               {
                 href: "https://github.com/Simon-Cun",
                 icon: <FaGithub size={28} />,
-                color: "#9528e0",
               },
               {
                 href: "https://www.linkedin.com/in/Simon-Cun",
                 icon: <FaLinkedin size={28} />,
-                color: "#0A66C2",
               },
               {
                 href: "mailto:simoncun2586@gmail.com",
                 icon: <FaEnvelope size={28} />,
-                color: "#D44638",
               },
               {
                 href: "/Simon_Cun_Resume.pdf",
                 icon: <FaFile size={28} />,
-                color: "#A9A9A9",
               },
-            ].map(({ href, icon, color }, index) => (
+            ].map(({ href, icon }, index) => (
               <motion.a
                 key={index}
                 href={href}
@@ -96,9 +92,9 @@ const Home = () => {
                 initial="initial"
                 whileInView="animate"
                 custom={(index % 5) * 0.2 + 0.5}
-                whileHover={{ scale: 1.15, color }}
+                whileHover={{ scale: 1.15 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="rounded-xl p-2"
+                className="p-2"
               >
                 {icon}
               </motion.a>

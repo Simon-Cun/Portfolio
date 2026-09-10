@@ -4,11 +4,11 @@ export const tags = [
     link: "#home",
   },
   {
-    name: "PROJECTS",
-    link: "#projects",
-  },
-  {
     name: "EXPERIENCE",
     link: "#experience",
+  },
+  {
+    name: "PROJECTS",
+    link: "#projects",
   },
 ];

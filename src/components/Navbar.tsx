@@ -4,11 +4,11 @@ import { tags } from "@/data/navbar";
 import ScrollLink from "@/components/ScrollLink";
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-50 hidden w-full py-3 text-lg md:block">
+    <div className="sticky top-0 z-50 hidden w-full py-3 md:block">
       <div className="relative flex items-center justify-center">
         <ScrollLink
           to="#home"
-          className="absolute left-4 cursor-pointer font-bold text-sky-100 hover:text-sky-100"
+          className="absolute left-4 cursor-pointer font-bold"
         >
           SIMON CUN
         </ScrollLink>
@@ -20,14 +20,11 @@ const Navbar = () => {
               initial="rest"
               whileHover="hover"
             >
-              <ScrollLink
-                to={link.replace("#", "")}
-                className="cursor-pointer hover:text-sky-100"
-              >
+              <ScrollLink to={link.replace("#", "")} className="cursor-pointer">
                 {name}
               </ScrollLink>
               <motion.span
-                className="absolute right-0 bottom-0 left-0 h-0.5 bg-sky-100"
+                className="absolute right-0 bottom-0 left-0 h-0.5 bg-white"
                 style={{ originX: 0.5 }}
                 variants={{
                   rest: { scaleX: 0 },

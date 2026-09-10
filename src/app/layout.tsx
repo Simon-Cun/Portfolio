@@ -24,7 +24,7 @@ type LayoutProps = {
 };
 
 export default function RootLayout({ children }: LayoutProps) {
-  const stars = Array.from({ length: 500 }).map((_, i) => {
+  const stars = Array.from({ length: 100 }).map((_, i) => {
     const size = Math.random() * 3 + 1;
     return (
       <div

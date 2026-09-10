@@ -4,7 +4,6 @@ import VerticalTitle from "@/components/VerticalTitle";
 import HorizontalTitle from "@/components/HorizontalTitle";
 import Link from "next/link";
 import Image from "next/image";
-import LineBreak from "@/components/LineBreak";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { ProjectData } from "@/data/projects";
 
@@ -26,17 +25,13 @@ const Projects = () => {
       </div>
 
       <div className="flex w-full flex-col gap-0 px-4 md:pl-10">
-        <div className="hidden pb-4 md:block">
-          <LineBreak />
-        </div>
-
         {ProjectData.map((project, index) => {
           const zIndex = index + 1;
 
           return (
             <motion.div
               key={index}
-              className={`flex flex-col gap-6 rounded-2xl border border-white/20 p-5 shadow-lg backdrop-blur-md backdrop-filter md:flex-row md:p-10 ${project.color} md:sticky`}
+              className={`flex flex-col gap-6 border border-white/20 p-5 shadow-lg backdrop-blur-md backdrop-filter md:flex-row md:p-10 ${project.color} md:sticky`}
               style={{
                 top: `${index * overlap}px`,
                 zIndex,
@@ -44,15 +39,9 @@ const Projects = () => {
               }}
             >
               <div className="flex w-full flex-col gap-4 md:w-2/3">
-                <h2 className="text-center text-3xl font-semibold sm:text-4xl md:text-left">
+                <h2 className="text-center text-2xl font-semibold md:text-left">
                   {project.title}
                 </h2>
-
-                <div className="flex flex-wrap justify-center gap-3 text-sm md:justify-start">
-                  <span>{project.role}</span>
-                  <span>{project.date}</span>
-                  <span>{project.status}</span>
-                </div>
 
                 <p className="text-center md:text-left">
                   {project.description}
@@ -60,26 +49,17 @@ const Projects = () => {
 
                 <div className="flex flex-wrap justify-center gap-2 md:justify-start">
                   {project.TechStack.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="rounded-lg bg-white/10 px-3 py-1 text-sm"
-                    >
+                    <span key={i} className="bg-white/10 px-3 py-1">
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                <ul className="list-disc pl-6 text-center md:text-left">
-                  {project.features.map((feature, i) => (
-                    <li key={i}>{feature}</li>
-                  ))}
-                </ul>
-
                 <div className="flex justify-center gap-6 md:justify-start">
                   <Link
                     href={project.Links.github}
                     target="_blank"
-                    className="flex items-center gap-2 text-xl"
+                    className="flex items-center gap-2"
                   >
                     <FaGithub size={20} /> Github
                   </Link>
@@ -89,7 +69,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Demo Site"
-                      className="flex items-center gap-2 text-xl"
+                      className="flex items-center gap-2"
                     >
                       <FaLink size={20} /> Demo
                     </Link>
